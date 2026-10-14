@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#14171b">
+<title>Ultimate Stats Checker for Minecraft</title>
+<meta name="description" content="Look up Minecraft Java and Bedrock players, check servers, and explore stats from your own world files.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'%3E%3Crect x='0' y='0' width='1' height='1' fill='%237fcf4a'/%3E%3Crect x='1' y='0' width='1' height='1' fill='%235aa534'/%3E%3Crect x='2' y='0' width='1' height='1' fill='%234d9330'/%3E%3Crect x='3' y='0' width='3' height='1' fill='%236cbb3c'/%3E%3Crect x='6' y='0' width='1' height='1' fill='%237fcf4a'/%3E%3Crect x='7' y='0' width='1' height='1' fill='%236cbb3c'/%3E%3Crect x='8' y='0' width='1' height='1' fill='%235aa534'/%3E%3Crect x='9' y='0' width='2' height='1' fill='%236cbb3c'/%3E%3Crect x='11' y='0' width='2' height='1' fill='%234d9330'/%3E%3Crect x='13' y='0' width='1' height='1' fill='%236cbb3c'/%3E%3Crect x='14' y='0' width='1' height='1' fill='%235aa534'/%3E%3Crect x='15' y='0' width='1' height='1' fill='%236cbb3c'/%3E%3Crect x='0' y='1' width='1' height='1' fill='%234d9330'/%3E%3Crect x='1' y='1' width='2' height='1' fill='%236cbb3c'/%3E%3Crect x='3' y='1' width='1' height='1' fill='%235aa534'/%3E%3Crect x='4' y='1' width='1' height='1' fill='%236cbb3c'/%3E%3Crect x='5' y='1' width='1' height='1' fill='%234d9330'/%3E%3Crect x='6' y='1' width='1' height='1' fill='%236cbb3c'/%3E%3Crect x='7' y='1' width='1' height='1' fill='%235aa534'/%3E%3Crect x='8' y='1' width='1' height='1' fill='%236cbb3c'/%3E%3Crect x='9' y='1' width='1' height='1' fill='%235aa534'/%3E%3Crect x='10' y='1' width='1' height='1' fill='%237fcf4a'/%3E%3Crect x='11' y='1' width='1' height='1' fill='%234d9330'/%3E%3Crect x='12' y='1' width='1' height='1' fill='%235aa534'/%3E%3Crect x='13' y='1' width='1' height='1' fill='%236cbb3c'/%3E%3Crect x='14' y='1' width='1' height='1' fill='%237fcf4a'/%3E%3Crect x='15' y='1' width='1' height='1' fill='%235aa534'/%3E%3Crect x='0' y='2' width='1' height='1' fill='%236cbb3c'/%3E%3Crect x='1' y='2' width='1' height='1' fill='%235aa534'/%3E%3Crect x='2' y='2' width='1' height='1' fill='%237fcf4a'/%3E%3Crect x='3' y='2' width='3' height='1' fill='%236cbb3c'/%3E%3Crect x='6' y='2' width='1' height='1' fill='%235aa534'/%3E%3Crect x='7' y='2' width='2' height='1' fill='%234d9330'/%3E%3Crect x='9' y='2' width='1' height='1' fill='%237fcf4a'/%3E%3Crect x='10' y='2' width='2' height='1' fill='%234d9330'/%3E%3Crect x='12' y='2' width='2' height='1' fill='%237fcf4a'/%3E%3Crect x='14' y='2' width='2' height='1' fill='%235aa534'/%3E%3Crect x='0' y='3' width='1' height='1' fill='%235aa534'/%3E%3Crect x='1' y='3' width='3' height='1' fill='%237fcf4a'/%3E%3Crect x='4' y='3' width='1' height='1' fill='%236cbb3c'/%3E%3Crect x='5' y='3' width='1' height='1' fill='%234d9330'/%3E%3Crect x='6' y='3' width='1' height='1' fill='%237fcf4a'/%3E%3Crect x='7' y='3' width='1' height='1' fill='%234d9330'/%3E%3Crect x='8' y='3' width='1' height='1' fill='%236cbb3c'/%3E%3Crect x='9' y='3' width='1' height='1' fill='%2399643c'/%3E%3Crect x='10' y='3' width='1' height='1' fill='%237fcf4a'/%3E%3Crect x='11' y='3' width='1' height='1' fill='%234d9330'/%3E%3Crect x='12' y='3' width='1' height='1' fill='%236cbb3c'/%3E%3Crect x='13' y='3' width='1' height='1' fill='%236b4226'/%3E%3Crect x='14' y='3' width='1' height='1' fill='%236cbb3c'/%3E%3Crect x='15' y='3' width='1' height='1' fill='%237fcf4a'/%3E%3Crect x='0' y='4' width='1' height='1' fill='%236b4226'/%3E%3Crect x='1' y='4' width='1' height='1' fill='%234d9330'/%3E%3Crect x='2' y='4' width='1' height='1' fill='%2399643c'/%3E%3Crect x='3' y='4' width='1' height='1' fill='%234d9330'/%3E%3Crect x='4' y='4' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='5' y='4' width='2' height='1' fill='%237a4d2c'/%3E%3Crect x='7' y='4' width='2' height='1' fill='%236b4226'/%3E%3Crect x='9' y='4' width='1' height='1' fill='%234d9330'/%3E%3Crect x='10' y='4' width='1' height='1' fill='%2399643c'/%3E%3Crect x='11' y='4' width='1' height='1' fill='%236b4226'/%3E%3Crect x='12' y='4' width='2' height='1' fill='%2399643c'/%3E%3Crect x='14' y='4' width='1' height='1' fill='%236b4226'/%3E%3Crect x='15' y='4' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='0' y='5' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='1' y='5' width='4' height='1' fill='%237a4d2c'/%3E%3Crect x='5' y='5' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='6' y='5' width='1' height='1' fill='%236b4226'/%3E%3Crect x='7' y='5' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='8' y='5' width='2' height='1' fill='%2399643c'/%3E%3Crect x='10' y='5' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='11' y='5' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='12' y='5' width='1' height='1' fill='%236b4226'/%3E%3Crect x='13' y='5' width='2' height='1' fill='%2399643c'/%3E%3Crect x='15' y='5' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='0' y='6' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='1' y='6' width='5' height='1' fill='%236b4226'/%3E%3Crect x='6' y='6' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='7' y='6' width='2' height='1' fill='%236b4226'/%3E%3Crect x='9' y='6' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='10' y='6' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='11' y='6' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='12' y='6' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='13' y='6' width='1' height='1' fill='%236b4226'/%3E%3Crect x='14' y='6' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='15' y='6' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='0' y='7' width='1' height='1' fill='%2399643c'/%3E%3Crect x='1' y='7' width='3' height='1' fill='%238a5a35'/%3E%3Crect x='4' y='7' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='5' y='7' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='6' y='7' width='1' height='1' fill='%2399643c'/%3E%3Crect x='7' y='7' width='2' height='1' fill='%238a5a35'/%3E%3Crect x='9' y='7' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='10' y='7' width='1' height='1' fill='%236b4226'/%3E%3Crect x='11' y='7' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='12' y='7' width='3' height='1' fill='%2399643c'/%3E%3Crect x='15' y='7' width='1' height='1' fill='%236b4226'/%3E%3Crect x='0' y='8' width='2' height='1' fill='%238a5a35'/%3E%3Crect x='2' y='8' width='4' height='1' fill='%236b4226'/%3E%3Crect x='6' y='8' width='1' height='1' fill='%2399643c'/%3E%3Crect x='7' y='8' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='8' y='8' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='9' y='8' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='10' y='8' width='2' height='1' fill='%2399643c'/%3E%3Crect x='12' y='8' width='1' height='1' fill='%236b4226'/%3E%3Crect x='13' y='8' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='14' y='8' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='15' y='8' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='0' y='9' width='1' height='1' fill='%2399643c'/%3E%3Crect x='1' y='9' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='2' y='9' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='3' y='9' width='1' height='1' fill='%2399643c'/%3E%3Crect x='4' y='9' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='5' y='9' width='2' height='1' fill='%2399643c'/%3E%3Crect x='7' y='9' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='8' y='9' width='1' height='1' fill='%2399643c'/%3E%3Crect x='9' y='9' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='10' y='9' width='1' height='1' fill='%2399643c'/%3E%3Crect x='11' y='9' width='3' height='1' fill='%237a4d2c'/%3E%3Crect x='14' y='9' width='1' height='1' fill='%236b4226'/%3E%3Crect x='15' y='9' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='0' y='10' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='1' y='10' width='1' height='1' fill='%236b4226'/%3E%3Crect x='2' y='10' width='1' height='1' fill='%2399643c'/%3E%3Crect x='3' y='10' width='2' height='1' fill='%238a5a35'/%3E%3Crect x='5' y='10' width='1' height='1' fill='%2399643c'/%3E%3Crect x='6' y='10' width='1' height='1' fill='%236b4226'/%3E%3Crect x='7' y='10' width='1' height='1' fill='%2399643c'/%3E%3Crect x='8' y='10' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='9' y='10' width='1' height='1' fill='%2399643c'/%3E%3Crect x='10' y='10' width='1' height='1' fill='%236b4226'/%3E%3Crect x='11' y='10' width='2' height='1' fill='%2399643c'/%3E%3Crect x='13' y='10' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='14' y='10' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='15' y='10' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='0' y='11' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='1' y='11' width='1' height='1' fill='%236b4226'/%3E%3Crect x='2' y='11' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='3' y='11' width='1' height='1' fill='%2399643c'/%3E%3Crect x='4' y='11' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='5' y='11' width='1' height='1' fill='%236b4226'/%3E%3Crect x='6' y='11' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='7' y='11' width='1' height='1' fill='%236b4226'/%3E%3Crect x='8' y='11' width='1' height='1' fill='%2399643c'/%3E%3Crect x='9' y='11' width='2' height='1' fill='%238a5a35'/%3E%3Crect x='11' y='11' width='1' height='1' fill='%236b4226'/%3E%3Crect x='12' y='11' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='13' y='11' width='1' height='1' fill='%236b4226'/%3E%3Crect x='14' y='11' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='15' y='11' width='1' height='1' fill='%236b4226'/%3E%3Crect x='0' y='12' width='1' height='1' fill='%2399643c'/%3E%3Crect x='1' y='12' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='2' y='12' width='3' height='1' fill='%236b4226'/%3E%3Crect x='5' y='12' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='6' y='12' width='3' height='1' fill='%237a4d2c'/%3E%3Crect x='9' y='12' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='10' y='12' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='11' y='12' width='1' height='1' fill='%236b4226'/%3E%3Crect x='12' y='12' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='13' y='12' width='1' height='1' fill='%236b4226'/%3E%3Crect x='14' y='12' width='1' height='1' fill='%2399643c'/%3E%3Crect x='15' y='12' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='0' y='13' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='1' y='13' width='3' height='1' fill='%238a5a35'/%3E%3Crect x='4' y='13' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='5' y='13' width='1' height='1' fill='%236b4226'/%3E%3Crect x='6' y='13' width='2' height='1' fill='%237a4d2c'/%3E%3Crect x='8' y='13' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='9' y='13' width='1' height='1' fill='%2399643c'/%3E%3Crect x='10' y='13' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='11' y='13' width='1' height='1' fill='%2399643c'/%3E%3Crect x='12' y='13' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='13' y='13' width='2' height='1' fill='%2399643c'/%3E%3Crect x='15' y='13' width='1' height='1' fill='%236b4226'/%3E%3Crect x='0' y='14' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='1' y='14' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='2' y='14' width='1' height='1' fill='%2399643c'/%3E%3Crect x='3' y='14' width='2' height='1' fill='%236b4226'/%3E%3Crect x='5' y='14' width='2' height='1' fill='%237a4d2c'/%3E%3Crect x='7' y='14' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='8' y='14' width='1' height='1' fill='%236b4226'/%3E%3Crect x='9' y='14' width='1' height='1' fill='%237a4d2c'/%3E%3Crect x='10' y='14' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='11' y='14' width='3' height='1' fill='%237a4d2c'/%3E%3Crect x='14' y='14' width='1' height='1' fill='%236b4226'/%3E%3Crect x='15' y='14' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='0' y='15' width='1' height='1' fill='%238a5a35'/%3E%3Crect x='1' y='15' width='1' height='1' fill='%2399643c'/%3E%3Crect x='2' y='15' width='1' height='1' fill='%236b4226'/%3E%3Crect x='3' y='15' width='2' height='1' fill='%238a5a35'/%3E%3Crect x='5' y='15' width='2' height='1' fill='%237a4d2c'/%3E%3Crect x='7' y='15' width='1' height='1' fill='%2399643c'/%3E%3Crect x='8' y='15' width='2' height='1' fill='%238a5a35'/%3E%3Crect x='10' y='15' width='1' height='1' fill='%236b4226'/%3E%3Crect x='11' y='15' width='2' height='1' fill='%238a5a35'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%236b4226'/%3E%3Crect x='14' y='15' width='1' height='1' fill='%2399643c'/%3E%3Crect x='15' y='15' width='1' height='1' fill='%237a4d2c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#14171b; --bg2:#191e23; --panel:#1f262d; --panel2:#262e36; --slot:#0f1317;
+  --hi:#3a4651; --lo:#06080a; --line:#2d3740;
+  --text:#e9eef2; --muted:#9aa9b4; --faint:#6f7e89;
+  --grass:#6cbb3c; --grass-d:#3d7a1f; --grass-l:#a0e664; --dirt:#8a5a35;
+  --xp:#f2c94c; --diamond:#4fd8d0; --red:#e5533d; --amber:#f0a03a; --violet:#b690ff;
+  --step:4px;
+  --safe-b:env(safe-area-inset-bottom,0px); --safe-t:env(safe-area-inset-top,0px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:70px}
+body{
+  margin:0;color:var(--text);background-color:var(--bg);
+  font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background-image:
+    radial-gradient(900px 380px at 50% -8%,rgba(108,187,60,.17),transparent 70%),
+    linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);
+  background-size:auto,16px 16px,16px 16px;
+  background-attachment:fixed;
+  padding-top:var(--safe-t);
+}
+h1,h2,h3,h4{font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;line-height:1.2;margin:0}
+h2{font-size:1.25rem}
+h3{font-size:1.05rem}
+p{margin:.4em 0}
+a{color:var(--diamond)}
+button,input,select{font:inherit;color:inherit}
+.skip{position:absolute;left:-999px;top:0;background:var(--grass);color:#0d1a06;padding:.6rem 1rem;z-index:100}
+.skip:focus{left:8px;top:8px}
+:focus-visible{outline:3px solid var(--xp);outline-offset:2px}
+.wrap{max-width:980px;margin:0 auto;padding:0 14px}
+
+/* header + nav */
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px;max-width:980px;margin:0 auto;padding:14px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand svg{width:44px;height:44px;flex:none;image-rendering:pixelated;filter:drop-shadow(0 3px 0 rgba(0,0,0,.5))}
+.brand h1{font-size:1.2rem;letter-spacing:.2px}
+.brand p{margin:0;color:var(--muted);font-size:.82rem}
+.icon-btn{width:46px;height:46px;border:0;background:var(--panel);cursor:pointer;font-size:1.25rem;
+  box-shadow:inset 2px 2px 0 var(--hi),inset -2px -2px 0 var(--lo)}
+.icon-btn:active{transform:translateY(2px)}
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;background:#101418;
+  border-top:3px solid var(--lo);padding-bottom:var(--safe-b)}
+.nav button{flex:1;min-height:56px;border:0;background:transparent;color:var(--muted);cursor:pointer;font-weight:700;font-size:.9rem;
+  border-top:4px solid transparent;margin-top:-3px}
+.nav button[aria-selected=true]{color:var(--grass-l);border-top-color:var(--grass);background:var(--panel)}
+main{max-width:980px;margin:0 auto;padding:6px 14px calc(96px + var(--safe-b))}
+.view[hidden]{display:none}
+@media(min-width:760px){
+  .nav{position:static;max-width:952px;margin:0 auto 8px;border:0;padding:0;background:transparent;gap:6px}
+  .nav button{margin:0;border:0;background:var(--panel);box-shadow:inset 2px 2px 0 var(--hi),inset -2px -2px 0 var(--lo)}
+  .nav button[aria-selected=true]{background:var(--grass-d);color:#fff;box-shadow:inset 2px 2px 0 var(--grass),inset -2px -2px 0 #1d4010}
+  main{padding-bottom:40px}
+}
+
+/* stepped-corner panel */
+.panel,.card{
+  background:var(--panel);position:relative;padding:14px;margin:12px 0;
+  clip-path:polygon(0 var(--step),var(--step) var(--step),var(--step) 0,calc(100% - var(--step)) 0,calc(100% - var(--step)) var(--step),100% var(--step),100% calc(100% - var(--step)),calc(100% - var(--step)) calc(100% - var(--step)),calc(100% - var(--step)) 100%,var(--step) 100%,var(--step) calc(100% - var(--step)),0 calc(100% - var(--step)));
+  box-shadow:inset 0 0 0 2px var(--line);
+}
+.panel.tight{padding:10px}
+.panel>h2,.panel>h3{margin-bottom:8px}
+.muted{color:var(--muted)} .faint{color:var(--faint)} .small{font-size:.85rem}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.grow{flex:1 1 auto}
+
+/* forms + buttons */
+.field{display:flex;gap:8px;flex-wrap:wrap}
+.field input[type=text],.field input[type=search],.field input[type=number],.field input[type=url],.field select,.inp{
+  flex:1 1 200px;min-height:48px;padding:8px 12px;background:var(--slot);border:0;border-radius:0;color:var(--text);
+  box-shadow:inset 2px 2px 0 var(--lo),inset -2px -2px 0 var(--hi)}
+.inp{width:100%;flex:none}
+.btn{min-height:48px;padding:8px 18px;border:0;border-radius:0;cursor:pointer;font-weight:800;color:#0b1805;background:var(--grass);
+  box-shadow:inset 3px 3px 0 var(--grass-l),inset -3px -3px 0 var(--grass-d),0 3px 0 #1b3a0d;transition:transform .08s}
+.btn:active{transform:translateY(3px);box-shadow:inset 3px 3px 0 var(--grass-l),inset -3px -3px 0 var(--grass-d),0 0 0 #1b3a0d}
+.btn.ghost{background:var(--panel2);color:var(--text);box-shadow:inset 2px 2px 0 var(--hi),inset -2px -2px 0 var(--lo),0 3px 0 #0b0e11}
+.btn.ghost:active{box-shadow:inset 2px 2px 0 var(--lo),inset -2px -2px 0 var(--hi)}
+.btn.small{min-height:40px;padding:4px 12px;font-size:.9rem}
+.btn[disabled]{opacity:.55;cursor:not-allowed}
+.seg{display:inline-flex;background:var(--slot);box-shadow:inset 2px 2px 0 var(--lo),inset -2px -2px 0 var(--hi);padding:3px}
+.seg button{min-height:42px;padding:4px 14px;border:0;background:transparent;color:var(--muted);cursor:pointer;font-weight:700}
+.seg button[aria-pressed=true]{background:var(--grass-d);color:#fff}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{min-height:36px;padding:2px 12px;border:0;cursor:pointer;background:var(--panel2);color:var(--text);font-size:.88rem;
+  box-shadow:inset 2px 2px 0 var(--hi),inset -2px -2px 0 var(--lo)}
+.chip[aria-pressed=true]{background:var(--grass-d);color:#fff}
+.chip .x{color:var(--muted);margin-left:6px}
+
+/* tags */
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:1px 7px;vertical-align:middle;white-space:nowrap;
+  box-shadow:inset 0 0 0 1px currentColor;background:rgba(0,0,0,.25)}
+.tag.live{color:var(--grass-l)} .tag.cached{color:var(--diamond)} .tag.imported{color:var(--xp)}
+.tag.estimated{color:var(--violet)} .tag.unavailable{color:var(--faint)} .tag.local{color:var(--amber)}
+.tag.edition{color:#fff;background:var(--grass-d);box-shadow:none}
+.tag.edition.bedrock{background:#2a6f9c}
+
+/* stat slots */
+.grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(148px,1fr))}
+.grid.wide{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.slot{background:var(--slot);padding:10px 12px;min-height:84px;display:flex;flex-direction:column;gap:2px;
+  box-shadow:inset 3px 3px 0 var(--lo),inset -3px -3px 0 var(--hi);min-width:0}
+.slot .lbl{color:var(--muted);font-size:.82rem;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.slot .val{font-size:1.45rem;font-weight:800;font-variant-numeric:tabular-nums;font-family:"Trebuchet MS",system-ui,sans-serif;overflow-wrap:anywhere}
+.slot .val.na{font-size:1rem;color:var(--faint);font-weight:600;padding-top:4px}
+.slot .sub{color:var(--faint);font-size:.78rem}
+.slot.hot .val{color:var(--xp)}
+
+/* bars */
+.bar{height:12px;background:var(--slot);box-shadow:inset 2px 2px 0 var(--lo),inset -2px -2px 0 var(--hi);overflow:hidden}
+.bar>i{display:block;height:100%;width:0;background:var(--grass);transition:width .7s cubic-bezier(.2,.8,.2,1);
+  background-image:repeating-linear-gradient(90deg,transparent 0 7px,rgba(0,0,0,.28) 7px 8px),linear-gradient(rgba(255,255,255,.28),transparent 45%)}
+.bar.gold>i{background-color:var(--xp)} .bar.aqua>i{background-color:var(--diamond)} .bar.red>i{background-color:var(--red)}
+.blist{display:grid;gap:9px;margin:8px 0}
+.brow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;align-items:baseline}
+.brow .n{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.brow .v{font-variant-numeric:tabular-nums;font-weight:700}
+.brow .bar{grid-column:1/-1}
+
+/* sub tabs */
+.subtabs{display:flex;gap:4px;overflow-x:auto;padding:2px 0 8px;margin:10px -2px 0;scrollbar-width:thin}
+.subtabs button{flex:none;min-height:44px;padding:4px 14px;border:0;cursor:pointer;background:var(--panel2);color:var(--muted);font-weight:700;
+  box-shadow:inset 2px 2px 0 var(--hi),inset -2px -2px 0 var(--lo)}
+.subtabs button[aria-selected=true]{background:var(--grass-d);color:#fff}
+
+/* profile */
+.profile{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
+@media(max-width:520px){.profile{grid-template-columns:1fr;justify-items:center;text-align:center}.profile .meta{width:100%;text-align:left}}
+.stage{background:
+  linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.35)),
+  repeating-conic-gradient(#1a2127 0 25%,#151b20 0 50%) 0 0/16px 16px;
+  padding:16px 22px 10px;box-shadow:inset 3px 3px 0 var(--lo),inset -3px -3px 0 var(--hi);display:grid;place-items:center;min-height:200px;min-width:128px}
+.doll{position:relative;image-rendering:pixelated}
+.doll div{position:absolute;background-repeat:no-repeat;image-rendering:pixelated}
+.face{position:relative;display:inline-block;image-rendering:pixelated;flex:none}
+.face div{position:absolute;inset:0;background-repeat:no-repeat;image-rendering:pixelated}
+.meta h2{font-size:1.5rem;overflow-wrap:anywhere}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:10px 0;font-size:.92rem}
+.kv dt{color:var(--muted)} .kv dd{margin:0;overflow-wrap:anywhere}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86em}
+.copy{cursor:pointer;border:0;background:var(--panel2);padding:2px 8px;margin-left:6px;font-size:.78rem;color:var(--text);
+  box-shadow:inset 2px 2px 0 var(--hi),inset -2px -2px 0 var(--lo)}
+
+/* tables */
+.tblbox{margin-top:10px}
+.tblbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;align-items:center}
+.tblscroll{overflow-x:auto;background:var(--slot);box-shadow:inset 2px 2px 0 var(--lo),inset -2px -2px 0 var(--hi)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}
+th{position:sticky;top:0;background:#151a1f;font-weight:700;white-space:nowrap}
+th button{background:none;border:0;padding:0;cursor:pointer;font-weight:700;color:var(--text);min-height:32px}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+td .mini{display:block;height:5px;margin-top:4px;background:var(--grass);opacity:.9}
+tr:hover td{background:rgba(255,255,255,.03)}
+.nsmall{color:var(--faint);font-size:.75rem;margin-left:6px}
+
+/* states */
+.sk{background:linear-gradient(90deg,#1b2128 25%,#27303a 50%,#1b2128 75%);background-size:200% 100%;animation:sh 1.2s linear infinite;min-height:18px}
+@keyframes sh{to{background-position:-200% 0}}
+.empty{text-align:center;padding:22px 10px}
+.empty .big{font-size:2rem}
+.err{box-shadow:inset 0 0 0 2px var(--red);background:#2a1c1b}
+.warn{box-shadow:inset 0 0 0 2px var(--amber);background:#2a241a}
+.note{box-shadow:inset 0 0 0 2px var(--line);background:#1a2026;padding:10px 12px;font-size:.9rem;margin:10px 0}
+.note.warn{box-shadow:inset 0 0 0 2px var(--amber)}
+.spin{display:inline-block;width:16px;height:16px;border:3px solid var(--grass);border-top-color:transparent;border-radius:50%;animation:rot .8s linear infinite;vertical-align:-3px;margin-right:6px}
+@keyframes rot{to{transform:rotate(360deg)}}
+#toasts{position:fixed;left:0;right:0;bottom:calc(76px + var(--safe-b));display:grid;gap:8px;justify-items:center;z-index:60;pointer-events:none;padding:0 12px}
+@media(min-width:760px){#toasts{bottom:24px}}
+.toast{background:#0c0f12;color:var(--text);padding:10px 16px;max-width:520px;box-shadow:inset 0 0 0 2px var(--grass);animation:tin .25s ease-out}
+.toast.bad{box-shadow:inset 0 0 0 2px var(--red)}
+@keyframes tin{from{transform:translateY(10px);opacity:0}}
+dialog{background:var(--panel);color:var(--text);border:0;padding:0;width:min(560px,94vw);max-height:90vh;box-shadow:inset 0 0 0 2px var(--line),0 0 0 4px #000}
+dialog::backdrop{background:rgba(0,0,0,.7)}
+dialog form{padding:16px;display:grid;gap:10px;max-height:88vh;overflow:auto}
+dialog label{display:grid;gap:4px;font-size:.9rem;color:var(--muted)}
+details{margin:6px 0} summary{cursor:pointer;min-height:36px;display:flex;align-items:center}
+.motd{background:#000;padding:10px 12px;font-family:ui-monospace,Consolas,monospace;font-size:.95rem;white-space:pre-wrap;overflow-wrap:anywhere;box-shadow:inset 2px 2px 0 #000,inset -2px -2px 0 var(--hi)}
+.srvhead{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.srvicon{width:64px;height:64px;image-rendering:pixelated;background:var(--slot)}
+.rank{display:grid;grid-template-columns:34px auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line)}
+.rank .pos{font-weight:800;color:var(--xp);text-align:center}
+.rank .bar{grid-column:2/-1;height:8px}
+.lbl2{font-weight:700}
+.legend{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="brand">
+    <svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="0" y="0" width="1" height="1" fill="#7fcf4a"/><rect x="1" y="0" width="1" height="1" fill="#5aa534"/><rect x="2" y="0" width="1" height="1" fill="#4d9330"/><rect x="3" y="0" width="3" height="1" fill="#6cbb3c"/><rect x="6" y="0" width="1" height="1" fill="#7fcf4a"/><rect x="7" y="0" width="1" height="1" fill="#6cbb3c"/><rect x="8" y="0" width="1" height="1" fill="#5aa534"/><rect x="9" y="0" width="2" height="1" fill="#6cbb3c"/><rect x="11" y="0" width="2" height="1" fill="#4d9330"/><rect x="13" y="0" width="1" height="1" fill="#6cbb3c"/><rect x="14" y="0" width="1" height="1" fill="#5aa534"/><rect x="15" y="0" width="1" height="1" fill="#6cbb3c"/><rect x="0" y="1" width="1" height="1" fill="#4d9330"/><rect x="1" y="1" width="2" height="1" fill="#6cbb3c"/><rect x="3" y="1" width="1" height="1" fill="#5aa534"/><rect x="4" y="1" width="1" height="1" fill="#6cbb3c"/><rect x="5" y="1" width="1" height="1" fill="#4d9330"/><rect x="6" y="1" width="1" height="1" fill="#6cbb3c"/><rect x="7" y="1" width="1" height="1" fill="#5aa534"/><rect x="8" y="1" width="1" height="1" fill="#6cbb3c"/><rect x="9" y="1" width="1" height="1" fill="#5aa534"/><rect x="10" y="1" width="1" height="1" fill="#7fcf4a"/><rect x="11" y="1" width="1" height="1" fill="#4d9330"/><rect x="12" y="1" width="1" height="1" fill="#5aa534"/><rect x="13" y="1" width="1" height="1" fill="#6cbb3c"/><rect x="14" y="1" width="1" height="1" fill="#7fcf4a"/><rect x="15" y="1" width="1" height="1" fill="#5aa534"/><rect x="0" y="2" width="1" height="1" fill="#6cbb3c"/><rect x="1" y="2" width="1" height="1" fill="#5aa534"/><rect x="2" y="2" width="1" height="1" fill="#7fcf4a"/><rect x="3" y="2" width="3" height="1" fill="#6cbb3c"/><rect x="6" y="2" width="1" height="1" fill="#5aa534"/><rect x="7" y="2" width="2" height="1" fill="#4d9330"/><rect x="9" y="2" width="1" height="1" fill="#7fcf4a"/><rect x="10" y="2" width="2" height="1" fill="#4d9330"/><rect x="12" y="2" width="2" height="1" fill="#7fcf4a"/><rect x="14" y="2" width="2" height="1" fill="#5aa534"/><rect x="0" y="3" width="1" height="1" fill="#5aa534"/><rect x="1" y="3" width="3" height="1" fill="#7fcf4a"/><rect x="4" y="3" width="1" height="1" fill="#6cbb3c"/><rect x="5" y="3" width="1" height="1" fill="#4d9330"/><rect x="6" y="3" width="1" height="1" fill="#7fcf4a"/><rect x="7" y="3" width="1" height="1" fill="#4d9330"/><rect x="8" y="3" width="1" height="1" fill="#6cbb3c"/><rect x="9" y="3" width="1" height="1" fill="#99643c"/><rect x="10" y="3" width="1" height="1" fill="#7fcf4a"/><rect x="11" y="3" width="1" height="1" fill="#4d9330"/><rect x="12" y="3" width="1" height="1" fill="#6cbb3c"/><rect x="13" y="3" width="1" height="1" fill="#6b4226"/><rect x="14" y="3" width="1" height="1" fill="#6cbb3c"/><rect x="15" y="3" width="1" height="1" fill="#7fcf4a"/><rect x="0" y="4" width="1" height="1" fill="#6b4226"/><rect x="1" y="4" width="1" height="1" fill="#4d9330"/><rect x="2" y="4" width="1" height="1" fill="#99643c"/><rect x="3" y="4" width="1" height="1" fill="#4d9330"/><rect x="4" y="4" width="1" height="1" fill="#8a5a35"/><rect x="5" y="4" width="2" height="1" fill="#7a4d2c"/><rect x="7" y="4" width="2" height="1" fill="#6b4226"/><rect x="9" y="4" width="1" height="1" fill="#4d9330"/><rect x="10" y="4" width="1" height="1" fill="#99643c"/><rect x="11" y="4" width="1" height="1" fill="#6b4226"/><rect x="12" y="4" width="2" height="1" fill="#99643c"/><rect x="14" y="4" width="1" height="1" fill="#6b4226"/><rect x="15" y="4" width="1" height="1" fill="#7a4d2c"/><rect x="0" y="5" width="1" height="1" fill="#8a5a35"/><rect x="1" y="5" width="4" height="1" fill="#7a4d2c"/><rect x="5" y="5" width="1" height="1" fill="#8a5a35"/><rect x="6" y="5" width="1" height="1" fill="#6b4226"/><rect x="7" y="5" width="1" height="1" fill="#7a4d2c"/><rect x="8" y="5" width="2" height="1" fill="#99643c"/><rect x="10" y="5" width="1" height="1" fill="#8a5a35"/><rect x="11" y="5" width="1" height="1" fill="#7a4d2c"/><rect x="12" y="5" width="1" height="1" fill="#6b4226"/><rect x="13" y="5" width="2" height="1" fill="#99643c"/><rect x="15" y="5" width="1" height="1" fill="#7a4d2c"/><rect x="0" y="6" width="1" height="1" fill="#8a5a35"/><rect x="1" y="6" width="5" height="1" fill="#6b4226"/><rect x="6" y="6" width="1" height="1" fill="#8a5a35"/><rect x="7" y="6" width="2" height="1" fill="#6b4226"/><rect x="9" y="6" width="1" height="1" fill="#8a5a35"/><rect x="10" y="6" width="1" height="1" fill="#7a4d2c"/><rect x="11" y="6" width="1" height="1" fill="#8a5a35"/><rect x="12" y="6" width="1" height="1" fill="#7a4d2c"/><rect x="13" y="6" width="1" height="1" fill="#6b4226"/><rect x="14" y="6" width="1" height="1" fill="#7a4d2c"/><rect x="15" y="6" width="1" height="1" fill="#8a5a35"/><rect x="0" y="7" width="1" height="1" fill="#99643c"/><rect x="1" y="7" width="3" height="1" fill="#8a5a35"/><rect x="4" y="7" width="1" height="1" fill="#7a4d2c"/><rect x="5" y="7" width="1" height="1" fill="#8a5a35"/><rect x="6" y="7" width="1" height="1" fill="#99643c"/><rect x="7" y="7" width="2" height="1" fill="#8a5a35"/><rect x="9" y="7" width="1" height="1" fill="#7a4d2c"/><rect x="10" y="7" width="1" height="1" fill="#6b4226"/><rect x="11" y="7" width="1" height="1" fill="#7a4d2c"/><rect x="12" y="7" width="3" height="1" fill="#99643c"/><rect x="15" y="7" width="1" height="1" fill="#6b4226"/><rect x="0" y="8" width="2" height="1" fill="#8a5a35"/><rect x="2" y="8" width="4" height="1" fill="#6b4226"/><rect x="6" y="8" width="1" height="1" fill="#99643c"/><rect x="7" y="8" width="1" height="1" fill="#8a5a35"/><rect x="8" y="8" width="1" height="1" fill="#7a4d2c"/><rect x="9" y="8" width="1" height="1" fill="#8a5a35"/><rect x="10" y="8" width="2" height="1" fill="#99643c"/><rect x="12" y="8" width="1" height="1" fill="#6b4226"/><rect x="13" y="8" width="1" height="1" fill="#7a4d2c"/><rect x="14" y="8" width="1" height="1" fill="#8a5a35"/><rect x="15" y="8" width="1" height="1" fill="#7a4d2c"/><rect x="0" y="9" width="1" height="1" fill="#99643c"/><rect x="1" y="9" width="1" height="1" fill="#7a4d2c"/><rect x="2" y="9" width="1" height="1" fill="#8a5a35"/><rect x="3" y="9" width="1" height="1" fill="#99643c"/><rect x="4" y="9" width="1" height="1" fill="#8a5a35"/><rect x="5" y="9" width="2" height="1" fill="#99643c"/><rect x="7" y="9" width="1" height="1" fill="#7a4d2c"/><rect x="8" y="9" width="1" height="1" fill="#99643c"/><rect x="9" y="9" width="1" height="1" fill="#7a4d2c"/><rect x="10" y="9" width="1" height="1" fill="#99643c"/><rect x="11" y="9" width="3" height="1" fill="#7a4d2c"/><rect x="14" y="9" width="1" height="1" fill="#6b4226"/><rect x="15" y="9" width="1" height="1" fill="#7a4d2c"/><rect x="0" y="10" width="1" height="1" fill="#7a4d2c"/><rect x="1" y="10" width="1" height="1" fill="#6b4226"/><rect x="2" y="10" width="1" height="1" fill="#99643c"/><rect x="3" y="10" width="2" height="1" fill="#8a5a35"/><rect x="5" y="10" width="1" height="1" fill="#99643c"/><rect x="6" y="10" width="1" height="1" fill="#6b4226"/><rect x="7" y="10" width="1" height="1" fill="#99643c"/><rect x="8" y="10" width="1" height="1" fill="#7a4d2c"/><rect x="9" y="10" width="1" height="1" fill="#99643c"/><rect x="10" y="10" width="1" height="1" fill="#6b4226"/><rect x="11" y="10" width="2" height="1" fill="#99643c"/><rect x="13" y="10" width="1" height="1" fill="#8a5a35"/><rect x="14" y="10" width="1" height="1" fill="#7a4d2c"/><rect x="15" y="10" width="1" height="1" fill="#8a5a35"/><rect x="0" y="11" width="1" height="1" fill="#7a4d2c"/><rect x="1" y="11" width="1" height="1" fill="#6b4226"/><rect x="2" y="11" width="1" height="1" fill="#7a4d2c"/><rect x="3" y="11" width="1" height="1" fill="#99643c"/><rect x="4" y="11" width="1" height="1" fill="#7a4d2c"/><rect x="5" y="11" width="1" height="1" fill="#6b4226"/><rect x="6" y="11" width="1" height="1" fill="#8a5a35"/><rect x="7" y="11" width="1" height="1" fill="#6b4226"/><rect x="8" y="11" width="1" height="1" fill="#99643c"/><rect x="9" y="11" width="2" height="1" fill="#8a5a35"/><rect x="11" y="11" width="1" height="1" fill="#6b4226"/><rect x="12" y="11" width="1" height="1" fill="#7a4d2c"/><rect x="13" y="11" width="1" height="1" fill="#6b4226"/><rect x="14" y="11" width="1" height="1" fill="#7a4d2c"/><rect x="15" y="11" width="1" height="1" fill="#6b4226"/><rect x="0" y="12" width="1" height="1" fill="#99643c"/><rect x="1" y="12" width="1" height="1" fill="#8a5a35"/><rect x="2" y="12" width="3" height="1" fill="#6b4226"/><rect x="5" y="12" width="1" height="1" fill="#8a5a35"/><rect x="6" y="12" width="3" height="1" fill="#7a4d2c"/><rect x="9" y="12" width="1" height="1" fill="#8a5a35"/><rect x="10" y="12" width="1" height="1" fill="#7a4d2c"/><rect x="11" y="12" width="1" height="1" fill="#6b4226"/><rect x="12" y="12" width="1" height="1" fill="#7a4d2c"/><rect x="13" y="12" width="1" height="1" fill="#6b4226"/><rect x="14" y="12" width="1" height="1" fill="#99643c"/><rect x="15" y="12" width="1" height="1" fill="#7a4d2c"/><rect x="0" y="13" width="1" height="1" fill="#7a4d2c"/><rect x="1" y="13" width="3" height="1" fill="#8a5a35"/><rect x="4" y="13" width="1" height="1" fill="#7a4d2c"/><rect x="5" y="13" width="1" height="1" fill="#6b4226"/><rect x="6" y="13" width="2" height="1" fill="#7a4d2c"/><rect x="8" y="13" width="1" height="1" fill="#8a5a35"/><rect x="9" y="13" width="1" height="1" fill="#99643c"/><rect x="10" y="13" width="1" height="1" fill="#7a4d2c"/><rect x="11" y="13" width="1" height="1" fill="#99643c"/><rect x="12" y="13" width="1" height="1" fill="#7a4d2c"/><rect x="13" y="13" width="2" height="1" fill="#99643c"/><rect x="15" y="13" width="1" height="1" fill="#6b4226"/><rect x="0" y="14" width="1" height="1" fill="#7a4d2c"/><rect x="1" y="14" width="1" height="1" fill="#8a5a35"/><rect x="2" y="14" width="1" height="1" fill="#99643c"/><rect x="3" y="14" width="2" height="1" fill="#6b4226"/><rect x="5" y="14" width="2" height="1" fill="#7a4d2c"/><rect x="7" y="14" width="1" height="1" fill="#8a5a35"/><rect x="8" y="14" width="1" height="1" fill="#6b4226"/><rect x="9" y="14" width="1" height="1" fill="#7a4d2c"/><rect x="10" y="14" width="1" height="1" fill="#8a5a35"/><rect x="11" y="14" width="3" height="1" fill="#7a4d2c"/><rect x="14" y="14" width="1" height="1" fill="#6b4226"/><rect x="15" y="14" width="1" height="1" fill="#8a5a35"/><rect x="0" y="15" width="1" height="1" fill="#8a5a35"/><rect x="1" y="15" width="1" height="1" fill="#99643c"/><rect x="2" y="15" width="1" height="1" fill="#6b4226"/><rect x="3" y="15" width="2" height="1" fill="#8a5a35"/><rect x="5" y="15" width="2" height="1" fill="#7a4d2c"/><rect x="7" y="15" width="1" height="1" fill="#99643c"/><rect x="8" y="15" width="2" height="1" fill="#8a5a35"/><rect x="10" y="15" width="1" height="1" fill="#6b4226"/><rect x="11" y="15" width="2" height="1" fill="#8a5a35"/><rect x="13" y="15" width="1" height="1" fill="#6b4226"/><rect x="14" y="15" width="1" height="1" fill="#99643c"/><rect x="15" y="15" width="1" height="1" fill="#7a4d2c"/></svg>
+    <div><h1>Ultimate Stats Checker</h1><p>Minecraft Java &amp; Bedrock</p></div>
+  </div>
+  <button id="btnSettings" class="icon-btn" aria-label="Open settings" title="Settings">&#9881;</button>
+</header>
+<nav class="nav" role="tablist" aria-label="Sections">
+  <button role="tab" data-view="player" aria-selected="true">Player</button>
+  <button role="tab" data-view="server" aria-selected="false">Server</button>
+  <button role="tab" data-view="boards" aria-selected="false">Boards</button>
+  <button role="tab" data-view="guide" aria-selected="false">Guide</button>
+</nav>
+<main id="main">
+
+<section id="view-player" class="view" aria-label="Player lookup">
+  <div class="panel">
+    <form id="playerForm" class="field" autocomplete="off">
+      <input id="playerQ" type="text" placeholder="Java username, UUID or Bedrock gamertag" aria-label="Player name" autocapitalize="off" autocorrect="off" spellcheck="false" maxlength="40">
+      <button class="btn" type="submit">Search</button>
+    </form>
+    <div class="row" style="margin-top:10px">
+      <div class="seg" id="edSeg" role="group" aria-label="Edition">
+        <button type="button" data-ed="auto" aria-pressed="true">Auto</button>
+        <button type="button" data-ed="java" aria-pressed="false">Java</button>
+        <button type="button" data-ed="bedrock" aria-pressed="false">Bedrock</button>
+      </div>
+      <button class="btn ghost small" id="btnImportTop" type="button">Import stats files</button>
+    </div>
+    <div id="recentPlayers" class="chips" style="margin-top:10px"></div>
+  </div>
+  <div id="playerOut" aria-live="polite">
+    <div class="panel empty">
+      <p class="lbl2">Look up a player to see their profile</p>
+      <p class="muted small">Profile, skin and UUID come from public APIs. Detailed stats need the player's stats file or a server stats API &mdash; see the Data guide.</p>
+    </div>
+  </div>
+</section>
+
+<section id="view-server" class="view" hidden aria-label="Server checker">
+  <div class="panel">
+    <form id="serverForm" class="field" autocomplete="off">
+      <input id="serverQ" type="text" placeholder="play.example.net or host:port" aria-label="Server address" autocapitalize="off" autocorrect="off" spellcheck="false" maxlength="255">
+      <button class="btn" type="submit">Check server</button>
+    </form>
+    <div class="row" style="margin-top:10px">
+      <div class="seg" id="srvSeg" role="group" aria-label="Server edition">
+        <button type="button" data-ed="java" aria-pressed="true">Java</button>
+        <button type="button" data-ed="bedrock" aria-pressed="false">Bedrock</button>
+      </div>
+    </div>
+    <div id="recentServers" class="chips" style="margin-top:10px"></div>
+  </div>
+  <div id="serverOut" aria-live="polite">
+    <div class="panel empty">
+      <p class="lbl2">Enter a server address</p>
+      <p class="muted small">Shows status, version, player count and MOTD when the server exposes them. Bedrock defaults to port 19132, Java to 25565.</p>
+    </div>
+  </div>
+</section>
+
+<section id="view-boards" class="view" hidden aria-label="Leaderboards and comparisons">
+  <div id="boardsOut"></div>
+</section>
+
+<section id="view-guide" class="view" hidden aria-label="Data guide">
+  <div class="panel">
+    <h2>What this site can and can't show</h2>
+    <p class="muted">Minecraft does not publish per-player statistics by username. This site only shows data it can actually get, and labels where each value came from.</p>
+    <div class="legend">
+      <span class="tag live">live</span><span class="small muted">fetched just now from a public API</span>
+    </div>
+    <div class="legend">
+      <span class="tag cached">cached</span><span class="small muted">a recent live result reused from this device</span>
+    </div>
+    <div class="legend">
+      <span class="tag imported">imported</span><span class="small muted">read from files you added (stats, advancements, level.dat)</span>
+    </div>
+    <div class="legend">
+      <span class="tag estimated">estimated</span><span class="small muted">calculated from other values (for example days from play time)</span>
+    </div>
+    <div class="legend">
+      <span class="tag unavailable">unavailable</span><span class="small muted">no legitimate source for it. Never shown as zero</span>
+    </div>
+  </div>
+  <div class="panel">
+    <h3>Works right away</h3>
+    <ul>
+      <li><b>Java profile:</b> username, UUID, skin, cape, name history (PlayerDB and Ashcon).</li>
+      <li><b>Bedrock profile:</b> XUID, Floodgate UUID and skin when the player has a skin on the GeyserMC Global API.</li>
+      <li><b>Server checker:</b> Java and Bedrock status via mcstatus.io, with mcsrvstat.us as backup.</li>
+    </ul>
+    <h3 style="margin-top:12px">Needs your files or a server</h3>
+    <ul>
+      <li><b>Java statistics and advancements</b> live in <span class="mono">world/stats/&lt;uuid&gt;.json</span> and <span class="mono">world/advancements/&lt;uuid&gt;.json</span>. Import them on the Player or Boards tab, or point Settings at a stats API you run.</li>
+      <li><b>World age and hardcore flag</b> come from <span class="mono">level.dat</span> (import it too).</li>
+      <li><b>Bedrock statistics</b> have no vanilla file or public API. Only a plugin or add-on on a server you control could provide them.</li>
+      <li><b>Leaderboards</b> rank only the players you imported on this device. There is no worldwide ranking and no verified global survival record, so none are shown.</li>
+    </ul>
+    <h3 style="margin-top:12px">Why "not recorded" is not zero</h3>
+    <p class="muted">Minecraft leaves out any stat that is still zero, so a missing entry could mean zero or a version that does not track it. The site shows a dash instead of guessing.</p>
+  </div>
+  <div class="panel">
+    <h3>Privacy</h3>
+    <p class="muted">Everything runs in your browser. Imported files stay on this device (localStorage) and are never uploaded. Lookups send the name you typed to the public APIs listed in Settings.</p>
+  </div>
+</section>
+
+</main>
+
+<dialog id="dlgSettings" aria-labelledby="setTitle">
+  <form method="dialog" id="setForm">
+    <h2 id="setTitle">Settings</h2>
+    <p class="muted small">API addresses are editable so you can swap a service if it goes down. No keys or secrets belong here.</p>
+    <label>PlayerDB (Java profile)<input class="inp" data-cfg="playerdb" type="url"></label>
+    <label>Ashcon (Java name history)<input class="inp" data-cfg="ashcon" type="url"></label>
+    <label>GeyserMC Global API (Bedrock)<input class="inp" data-cfg="geyser" type="url"></label>
+    <label>mcstatus.io (server status)<input class="inp" data-cfg="mcstatus" type="url"></label>
+    <label>mcsrvstat.us (server status backup)<input class="inp" data-cfg="mcsrvstat" type="url"></label>
+    <label>Avatar image host<input class="inp" data-cfg="avatarBase" type="url"></label>
+    <label>Cache lookups for (minutes, 0 = off)<input class="inp" data-cfg="cacheMinutes" type="number" min="0" max="1440"></label>
+    <label>Custom stats URL (optional). Use {uuid}, {uuid_nodash}, {name}, {xuid}<input class="inp" data-cfg="statsUrl" type="url" placeholder="https://my-server.example/stats/{uuid}"></label>
+    <label>Custom advancements URL (optional)<input class="inp" data-cfg="advUrl" type="url" placeholder="https://my-server.example/advancements/{uuid}"></label>
+    <label>Total advancements in your game version (optional, for true % complete)<input class="inp" data-cfg="advTotal" type="number" min="0" max="2000"></label>
+    <div class="row">
+      <button class="btn" value="save" id="setSave">Save</button>
+      <button class="btn ghost" type="button" id="setReset">Reset defaults</button>
+      <button class="btn ghost" type="button" id="setClose">Close</button>
+    </div>
+    <div class="row">
+      <button class="btn ghost small" type="button" id="setClearCache">Clear cached lookups</button>
+      <button class="btn ghost small" type="button" id="setClearData">Delete imported data</button>
+    </div>
+  </form>
+</dialog>
+<div id="toasts"></div>
+<input type="file" id="fileIn" multiple accept=".json,.dat,.dat_old,application/json" hidden>
+
+<script>
+'use strict';
+(() => {
+/* ============ config + storage ============ */
+const LS = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } },
+  del(k) { try { localStorage.removeItem(k); } catch (e) {} }
+};
+const DEFAULT_CFG = {
+  playerdb: 'https://playerdb.co/api/player/minecraft/',
+  ashcon: 'https://api.ashcon.app/mojang/v2/user/',
+  geyser: 'https://api.geysermc.org/v2',
+  mcstatus: 'https://api.mcstatus.io/v2/status',
+  mcsrvstat: 'https://api.mcsrvstat.us',
+  avatarBase: 'https://mc-heads.net',
+  textures: 'https://textures.minecraft.net/texture/',
+  cacheMinutes: 10,
+  statsUrl: '', advUrl: '', advTotal: ''
+};
+let cfg = Object.assign({}, DEFAULT_CFG, LS.get('nds.cfg', {}));
+let db = Object.assign({ players: {}, level: null, records: {} }, LS.get('nds.db', {}));
+const persistDb = () => { if (!LS.set('nds.db', db)) toast('Storage is full. Imported data will be lost when you close this tab.', 'bad'); };
+
+/* ============ dom helpers ============ */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+function add(el, kids) { for (const k of kids.flat(Infinity)) { if (k == null || k === false) continue; el.append(k.nodeType ? k : document.createTextNode(String(k))); } }
+function h(tag, props, ...kids) {
+  const el = document.createElement(tag);
+  if (props) for (const [k, v] of Object.entries(props)) {
+    if (v == null || v === false) continue;
+    if (k === 'class') el.className = v;
+    else if (k === 'style' && typeof v === 'object') Object.assign(el.style, v);
+    else if (k.startsWith('on') && typeof v === 'function') el.addEventListener(k.slice(2), v);
+    else if (k === 'for') el.htmlFor = v;
+    else if (k.includes('-') || k === 'role') el.setAttribute(k, v === true ? '' : v);
+    else if (k in el) { try { el[k] = v; } catch (e) { el.setAttribute(k, v); } }
+    else el.setAttribute(k, v === true ? '' : v);
+  }
+  add(el, kids);
+  return el;
+}
+const clear = el => { while (el.firstChild) el.removeChild(el.firstChild); return el; };
+function toast(msg, kind) {
+  const t = h('div', { class: 'toast' + (kind === 'bad' ? ' bad' : ''), role: 'status' }, msg);
+  $('#toasts').append(t); setTimeout(() => t.remove(), 3800);
+}
+
+/* ============ formatting ============ */
+const nf = new Intl.NumberFormat();
+const fmtNum = n => n == null ? '—' : nf.format(Math.round(n * 100) / 100);
+const fmtDist = cm => { if (cm == null) return '—'; const m = cm / 100; return m >= 1000 ? (m / 1000).toFixed(m >= 100000 ? 0 : 2) + ' km' : nf.format(Math.round(m)) + ' m'; };
+function fmtDur(sec) {
+  if (sec == null) return '—'; sec = Math.floor(sec);
+  const d = Math.floor(sec / 86400), hh = Math.floor(sec % 86400 / 3600), m = Math.floor(sec % 3600 / 60), s = sec % 60;
+  if (d) return `${d}d ${hh}h`; if (hh) return `${hh}h ${m}m`; if (m) return `${m}m ${s}s`; return `${s}s`;
+}
+const fmtTicks = t => t == null ? '—' : fmtDur(t / 20);
+const fmtDmg = v => v == null ? '—' : nf.format(Math.round(v) / 10) + ' HP';
+const fmtDate = ms => ms ? new Date(ms).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' }) : '—';
+const fmtDateTime = ms => ms ? new Date(ms).toLocaleString() : '—';
+function ago(ms) { const s = Math.max(0, (Date.now() - ms) / 1000); if (s < 60) return 'just now'; if (s < 3600) return Math.round(s / 60) + ' min ago'; if (s < 86400) return Math.round(s / 3600) + ' h ago'; return Math.round(s / 86400) + ' d ago'; }
+function pretty(id) {
+  const name = String(id).replace(/^[^:]*:/, '').split('/').pop().replace(/_/g, ' ');
+  return name.replace(/\b\w/g, c => c.toUpperCase());
+}
+const nsOf = id => String(id).includes(':') ? String(id).split(':')[0] : 'minecraft';
+const stripNs = id => String(id).replace(/^minecraft:/, '');
+function kindOf(cat, key) {
+  const k = stripNs(key);
+  if (k.endsWith('_one_cm')) return 'dist';
+  if (cat === 'custom') {
+    if (/(^|_)(time|minute)$|^time_since|^total_world_time$/.test(k)) return 'ticks';
+    if (/^damage_/.test(k)) return 'dmg';
+  }
+  return 'num';
+}
+const fmtKind = (kind, v) => kind === 'dist' ? fmtDist(v) : kind === 'ticks' ? fmtTicks(v) : kind === 'dmg' ? fmtDmg(v) : fmtNum(v);
+const sumObj = o => { if (!o) return null; let t = 0; for (const v of Object.values(o)) t += +v || 0; return t; };
+const dash = u => { u = u.replace(/-/g, '').toLowerCase(); return `${u.slice(0, 8)}-${u.slice(8, 12)}-${u.slice(12, 16)}-${u.slice(16, 20)}-${u.slice(20)}`; };
+const JAVA_RE = /^[A-Za-z0-9_]{3,16}$/;
+const UUID_RE = /^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$/i;
+const enc = encodeURIComponent;
+
+/* ============ network ============ */
+class ApiError extends Error { constructor(kind, msg, extra) { super(msg); this.kind = kind; Object.assign(this, extra); } }
+async function fetchRaw(url, timeout = 10000) {
+  try { new URL(url); } catch (e) { throw new ApiError('config', 'The API address is not a valid URL. Check Settings.'); }
+  const ctl = new AbortController(); const to = setTimeout(() => ctl.abort(), timeout); const t0 = performance.now();
+  let res, text;
+  try { res = await fetch(url, { signal: ctl.signal, headers: { Accept: 'application/json' } }); text = await res.text(); }
+  catch (e) {
+    clearTimeout(to);
+    if (e.name === 'AbortError') throw new ApiError('timeout', 'The service took too long to answer.');
+    throw new ApiError('network', 'Could not reach the service. You may be offline, or it blocks browser requests (CORS).');
+  }
+  clearTimeout(to);
+  if (res.status === 429) throw new ApiError('ratelimit', 'The service is rate limiting requests. Wait a minute and try again.', { status: 429 });
+  let data = null; try { data = JSON.parse(text); } catch (e) {}
+  return { status: res.status, ok: res.ok, data, text, ms: Math.round(performance.now() - t0) };
+}
+async function cached(key, fn, force) {
+  const ttl = (+cfg.cacheMinutes || 0) * 60000, k = 'nds.c.' + key;
+  if (!force && ttl > 0) { const c = LS.get(k); if (c && Date.now() - c.t < ttl) return { data: c.d, cached: true, t: c.t }; }
+  const data = await fn(); const t = Date.now();
+  if (ttl > 0) LS.set(k, { t, d: data });
+  return { data, cached: false, t };
+}
+function pruneCache() {
+  try { for (let i = localStorage.length - 1; i >= 0; i--) { const k = localStorage.key(i); if (k && k.startsWith('nds.c.')) { const c = JSON.parse(localStorage.getItem(k)); if (!c || Date.now() - c.t > 864e5) localStorage.removeItem(k); } } } catch (e) {}
+}
+const decodeTextures = b64 => { try { return JSON.parse(atob(b64)).textures || null; } catch (e) { return null; } };
+
+/* ============ player lookups ============ */
+async function lookupJava(q) {
+  if (!JAVA_RE.test(q) && !UUID_RE.test(q)) throw new ApiError('invalid', 'Java usernames are 3–16 letters, numbers or underscores. You can also paste a UUID.');
+  const [a, b] = await Promise.allSettled([fetchRaw(cfg.playerdb + enc(q)), fetchRaw(cfg.ashcon + enc(q))]);
+  const providers = []; let pdb = null, ash = null;
+  if (a.status === 'fulfilled') {
+    const r = a.value, p = r.data && r.data.data && r.data.data.player;
+    if (r.ok && p && p.id) { pdb = p; providers.push({ name: 'PlayerDB', status: 'live' }); }
+    else if (r.status >= 502 || (!r.data && r.status >= 500)) providers.push({ name: 'PlayerDB', status: 'error', note: 'HTTP ' + r.status });
+    else providers.push({ name: 'PlayerDB', status: 'notfound' });
+  } else providers.push({ name: 'PlayerDB', status: 'error', note: a.reason.message });
+  if (b.status === 'fulfilled') {
+    const r = b.value;
+    if (r.ok && r.data && r.data.uuid) { ash = r.data; providers.push({ name: 'Ashcon', status: 'live' }); }
+    else if (r.status === 404 || r.status === 400) providers.push({ name: 'Ashcon', status: 'notfound' });
+    else providers.push({ name: 'Ashcon', status: 'error', note: 'HTTP ' + r.status });
+  } else providers.push({ name: 'Ashcon', status: 'error', note: b.reason.message });
+  if (!pdb && !ash) {
+    const nf404 = providers.some(p => p.status === 'notfound');
+    if (nf404) throw new ApiError('notfound', `No Java account named "${q}" was found.`, { providers });
+    throw new ApiError('network', providers.map(p => p.note).filter(Boolean)[0] || 'Both profile services failed.', { providers });
+  }
+  let tex = null;
+  if (pdb && Array.isArray(pdb.properties)) { const p = pdb.properties.find(x => x.name === 'textures'); if (p) tex = decodeTextures(p.value); }
+  const skinUrl = (tex && tex.SKIN && tex.SKIN.url) || (pdb && pdb.skin_texture) || (ash && ash.textures && ash.textures.skin && ash.textures.skin.url) || null;
+  const slim = tex && tex.SKIN && tex.SKIN.metadata ? tex.SKIN.metadata.model === 'slim' : !!(ash && ash.textures && ash.textures.slim);
+  const capeUrl = (tex && tex.CAPE && tex.CAPE.url) || (ash && ash.textures && ash.textures.cape && ash.textures.cape.url) || null;
+  const hist = ash && Array.isArray(ash.username_history) ? ash.username_history.map(x => ({ name: x.username, changedAt: x.changed_at ? Date.parse(x.changed_at) : null })) : null;
+  return {
+    edition: 'java', name: (pdb && pdb.username) || ash.username, uuid: dash((pdb && pdb.id) || ash.uuid),
+    skinUrl, slim, capeUrl, nameHistory: hist, createdAt: ash && ash.created_at ? Date.parse(ash.created_at) : null, providers
+  };
+}
+async function lookupBedrock(q) {
+  const gt = q.replace(/^\./, '').trim();
+  if (!/^[A-Za-z0-9 #]{1,20}$/.test(gt)) throw new ApiError('invalid', 'Bedrock gamertags use letters, numbers and spaces (up to 15 characters, or Name#1234).');
+  const r = await fetchRaw(`${cfg.geyser}/xbox/xuid/${enc(gt)}`);
+  const m = r.text && r.text.match(/"xuid"\s*:\s*"?(\d{5,20})/);
+  if (!m) { if (r.status >= 502) throw new ApiError('network', 'The GeyserMC API is having problems (HTTP ' + r.status + ').'); throw new ApiError('notfound', `No Xbox gamertag "${gt}" was found.`); }
+  const xuid = m[1];
+  const providers = [{ name: 'GeyserMC xuid', status: 'live' }];
+  const [sk, tag] = await Promise.allSettled([fetchRaw(`${cfg.geyser}/skin/${xuid}`), fetchRaw(`${cfg.geyser}/xbox/gamertag/${xuid}`)]);
+  let skinUrl = null, slim = false, isSteve = null, skinUpdated = null, name = gt;
+  if (sk.status === 'fulfilled' && sk.value.ok && sk.value.data) {
+    const d = sk.value.data; providers.push({ name: 'GeyserMC skin', status: 'live' });
+    const tex = d.value ? decodeTextures(d.value) : null;
+    skinUrl = (tex && tex.SKIN && tex.SKIN.url) || (d.texture_id ? cfg.textures + d.texture_id : null);
+    slim = !!(tex && tex.SKIN && tex.SKIN.metadata && tex.SKIN.metadata.model === 'slim');
+    isSteve = d.is_steve != null ? !!d.is_steve : null; skinUpdated = d.last_update || null;
+  } else providers.push({ name: 'GeyserMC skin', status: 'notfound', note: 'No skin stored. The player has probably never joined a Geyser server.' });
+  if (tag.status === 'fulfilled' && tag.value.ok && tag.value.data && tag.value.data.gamertag) name = tag.value.data.gamertag;
+  const lsb = BigInt(xuid).toString(16).padStart(16, '0');
+  return { edition: 'bedrock', name, xuid, uuid: `00000000-0000-0000-${lsb.slice(0, 4)}-${lsb.slice(4)}`, skinUrl, slim, isSteve, skinUpdated, capeUrl: null, nameHistory: null, createdAt: null, providers };
+}
+async function lookupPlayer(q, ed, force) {
+  q = q.trim(); if (!q) throw new ApiError('invalid', 'Type a username or gamertag first.');
+  const run = e => cached(`p.${e}.${q.toLowerCase()}`, () => e === 'java' ? lookupJava(q) : lookupBedrock(q), force);
+  if (ed === 'java') return run('java');
+  if (ed === 'bedrock') return run('bedrock');
+  const javaOk = JAVA_RE.test(q) || UUID_RE.test(q);
+  if (javaOk) {
+    try { return await run('java'); }
+    catch (e) { if (e.kind !== 'notfound') throw e; try { return await run('bedrock'); } catch (e2) { e.message += ' It was not found as a Bedrock gamertag either.'; throw e; } }
+  }
+  return run('bedrock');
+}
+
+/* ============ NBT (level.dat) ============ */
+async function gunzip(buf) {
+  if (typeof DecompressionStream === 'undefined') throw new Error('This browser cannot unpack .dat files. Use a recent Chrome.');
+  return new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();
+}
+function parseNBT(ab) {
+  const dv = new DataView(ab), u8 = new Uint8Array(ab), td = new TextDecoder(); let p = 0;
+  const str = () => { const n = dv.getUint16(p); p += 2; const s = td.decode(u8.subarray(p, p + n)); p += n; return s; };
+  function val(t) {
+    switch (t) {
+      case 1: return dv.getInt8(p++);
+      case 2: { const v = dv.getInt16(p); p += 2; return v; }
+      case 3: { const v = dv.getInt32(p); p += 4; return v; }
+      case 4: { const v = Number(dv.getBigInt64(p)); p += 8; return v; }
+      case 5: { const v = dv.getFloat32(p); p += 4; return v; }
+      case 6: { const v = dv.getFloat64(p); p += 8; return v; }
+      case 7: { const n = dv.getInt32(p); p += 4 + n; return null; }
+      case 8: return str();
+      case 9: { const it = dv.getInt8(p++), n = dv.getInt32(p); p += 4; const a = []; for (let i = 0; i < n; i++) a.push(val(it)); return a; }
+      case 10: { const o = {}; for (;;) { const tt = dv.getInt8(p++); if (tt === 0) break; const k = str(); o[k] = val(tt); } return o; }
+      case 11: { const n = dv.getInt32(p); p += 4 + 4 * n; return null; }
+      case 12: { const n = dv.getInt32(p); p += 4 + 8 * n; return null; }
+      default: throw new Error('Unknown NBT tag ' + t);
+    }
+  }
+  if (dv.getInt8(p++) !== 10) throw new Error('Not an NBT file'); str(); return val(10);
+}
+async function readLevelDat(buf) {
+  const root = parseNBT(await gunzip(buf)), d = root.Data;
+  if (!d || d.LevelName == null) throw new Error('This .dat file is not a level.dat (no world data inside).');
+  return { name: d.LevelName, time: d.Time, dayTime: d.DayTime, hardcore: d.hardcore == null ? null : !!d.hardcore, gameType: d.GameType, difficulty: d.Difficulty, lastPlayed: d.LastPlayed, version: d.Version && d.Version.Name, importedAt: Date.now() };
+}
+
+/* ============ stats parsing ============ */
+function legacyStats(json) {
+  const out = {}, map = { mineBlock: 'mined', craftItem: 'crafted', useItem: 'used', breakItem: 'broken', pickup: 'picked_up', drop: 'dropped', killEntity: 'killed', entityKilledBy: 'killed_by' };
+  const snake = s => s.replace(/([a-z])([A-Z])/g, '$1_$2').toLowerCase();
+  const put = (c, k, v) => { (out['minecraft:' + c] = out['minecraft:' + c] || {})[k] = v; };
+  for (const [k, v] of Object.entries(json)) {
+    if (!k.startsWith('stat.') || typeof v !== 'number') continue;
+    const parts = k.slice(5).split('.'), head = parts[0], rest = parts.slice(1).join('.').replace(/^minecraft\./, '');
+    if (map[head] && rest) put(map[head], 'minecraft:' + snake(rest), v); else put('custom', 'minecraft:' + snake(head), v);
+  }
+  return out;
+}
+function detectKind(json) {
+  if (!json || typeof json !== 'object' || Array.isArray(json)) return null;
+  if (json.stats && typeof json.stats === 'object') return 'stats';
+  const keys = Object.keys(json).filter(k => k !== 'DataVersion');
+  if (keys.some(k => k.startsWith('stat.'))) return 'legacy';
+  if (keys.some(k => json[k] && typeof json[k] === 'object' && ('criteria' in json[k] || 'done' in json[k]))) return 'adv';
+  return null;
+}
+function parseAdvDate(s) {
+  const m = /^(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}:\d{2}) ([+-]\d{2})(\d{2})$/.exec(String(s));
+  const t = m ? Date.parse(`${m[1]}T${m[2]}${m[3]}:${m[4]}`) : Date.parse(String(s));
+  return isNaN(t) ? null : t;
+}
+function parseAdv(json) {
+  const list = [];
+  for (const [id, v] of Object.entries(json || {})) {
+    if (id === 'DataVersion' || !v || typeof v !== 'object') continue;
+    const path = id.replace(/^[^:]*:/, ''), cat = path.split('/')[0];
+    const crit = v.criteria || {}, dates = Object.values(crit).map(parseAdvDate).filter(Boolean);
+    list.push({ id, cat, isRecipe: cat === 'recipes', isRoot: /\/root$/.test(path), done: !!v.done, crit: Object.keys(crit), date: v.done && dates.length ? Math.max(...dates) : null });
+  }
+  return list;
+}
+const cget = (c, k) => c && c['minecraft:' + k] != null ? c['minecraft:' + k] : null;
+function derive(stats) {
+  const c = stats['minecraft:custom'] || null, D = {};
+  D.mined = stats['minecraft:mined'] || null; D.killed = stats['minecraft:killed'] || null; D.killedBy = stats['minecraft:killed_by'] || null;
+  D.crafted = stats['minecraft:crafted'] || null; D.used = stats['minecraft:used'] || null; D.broken = stats['minecraft:broken'] || null;
+  D.pickedUp = stats['minecraft:picked_up'] || null; D.dropped = stats['minecraft:dropped'] || null; D.custom = c;
+  D.blocksMined = sumObj(D.mined);
+  const mk = cget(c, 'mob_kills'); D.mobKills = mk != null ? mk : sumObj(D.killed);
+  D.playerKills = cget(c, 'player_kills'); D.deaths = cget(c, 'deaths');
+  const pt = cget(c, 'play_time'); D.playTicks = pt != null ? pt : cget(c, 'play_one_minute');
+  D.worldTicks = cget(c, 'total_world_time'); D.sinceDeath = cget(c, 'time_since_death'); D.sinceRest = cget(c, 'time_since_rest');
+  D.jumps = cget(c, 'jump');
+  D.dist = Object.entries(c || {}).filter(([k]) => k.endsWith('_one_cm')).map(([k, v]) => [k, +v || 0]);
+  D.distTotal = D.dist.length ? D.dist.reduce((a, [, v]) => a + v, 0) : null;
+  const tk = (D.mobKills != null || D.playerKills != null) ? (D.mobKills || 0) + (D.playerKills || 0) : null;
+  D.totalKills = tk;
+  D.kdPlayers = D.playerKills != null && D.deaths ? D.playerKills / D.deaths : null;
+  D.kdAll = tk != null && D.deaths ? tk / D.deaths : null;
+  return D;
+}
+function advSummary(list) {
+  const real = list.filter(a => !a.isRecipe && !a.isRoot), done = real.filter(a => a.done);
+  const cats = {}; for (const a of real) { const c = cats[a.cat] = cats[a.cat] || { done: 0, tracked: 0 }; c.tracked++; if (a.done) c.done++; }
+  return { real, done: done.length, tracked: real.length, recipes: list.filter(a => a.isRecipe && a.done).length, cats };
+}
+
+/* ============ UI components ============ */
+const tag = (kind, text) => h('span', { class: 'tag ' + kind }, text || kind);
+function skinFace(url, px, slim) {
+  const s = px / 8, box = h('span', { class: 'face', style: { width: px + 'px', height: px + 'px', background: '#1b2127' } });
+  if (!url) return box;
+  const u = `url("${url}")`;
+  box.append(h('div', { style: { backgroundImage: u, backgroundSize: `${64 * s}px auto`, backgroundPosition: `${-8 * s}px ${-8 * s}px` } }),
+    h('div', { style: { backgroundImage: u, backgroundSize: `${64 * s}px auto`, backgroundPosition: `${-40 * s}px ${-8 * s}px` } }));
+  return box;
+}
+function headImg(idOrName, px) {
+  const fb = h('span', { class: 'face', style: { width: px + 'px', height: px + 'px', background: '#2a3540' } });
+  const img = h('img', { src: `${cfg.avatarBase}/avatar/${enc(idOrName)}/${px * 2}`, width: px, height: px, alt: '', loading: 'lazy', style: { imageRendering: 'pixelated', flex: 'none' } });
+  img.addEventListener('error', () => img.replaceWith(fb));
+  return img;
+}
+function skinDoll(url, slim, s) {
+  const root = h('div', { class: 'doll', style: { width: 16 * s + 'px', height: 32 * s + 'px' } });
+  if (!url) return h('div', { class: 'muted small' }, 'No skin available');
+  const img = new Image();
+  img.onload = () => {
+    const H = img.naturalHeight || 64, legacy = H < 64, u = `url("${url}")`;
+    const part = (x, y, w, hh, dx, dy, mirror) => root.append(h('div', { style: {
+      left: dx * s + 'px', top: dy * s + 'px', width: w * s + 'px', height: hh * s + 'px', backgroundImage: u,
+      backgroundSize: `${64 * s}px ${H * s}px`, backgroundPosition: `${-x * s}px ${-y * s}px`, transform: mirror ? 'scaleX(-1)' : ''
+    } }));
+    const aw = slim ? 3 : 4, ax = slim ? 1 : 0;
+    part(8, 8, 8, 8, 4, 0); part(20, 20, 8, 12, 4, 8); part(44, 20, aw, 12, ax, 8); part(4, 20, 4, 12, 4, 20);
+    if (legacy) { part(44, 20, aw, 12, 12, 8, true); part(4, 20, 4, 12, 8, 20, true); }
+    else { part(36, 52, aw, 12, 12, 8); part(20, 52, 4, 12, 8, 20); part(20, 36, 8, 12, 4, 8); part(44, 36, aw, 12, ax, 8); part(52, 52, aw, 12, 12, 8); part(4, 36, 4, 12, 4, 20); part(4, 52, 4, 12, 8, 20); }
+    part(40, 8, 8, 8, 4, 0);
+  };
+  img.onerror = () => root.replaceWith(h('div', { class: 'muted small' }, 'Skin image could not be loaded'));
+  img.src = url;
+  return root;
+}
+function statTile(label, value, o = {}) {
+  const na = value == null || value === '—';
+  return h('div', { class: 'slot' + (o.hot ? ' hot' : ''), title: na ? (o.why || 'Not recorded in the data we have. Not shown as zero.') : undefined },
+    h('div', { class: 'lbl' }, label, o.tag ? tag(o.tag) : null),
+    h('div', { class: 'val' + (na ? ' na' : '') }, na ? 'Not recorded' : value),
+    o.sub ? h('div', { class: 'sub' }, o.sub) : null);
+}
+function barList(entries, fmt, o = {}) {
+  const max = Math.max(1, ...entries.map(e => e[1])), box = h('div', { class: 'blist' });
+  entries.forEach(([k, v]) => {
+    const bar = h('div', { class: 'bar ' + (o.color || '') }, h('i'));
+    box.append(h('div', { class: 'brow' }, h('span', { class: 'n' }, o.label ? o.label(k) : pretty(k)), h('span', { class: 'v' }, fmt(v)), bar));
+    requestAnimationFrame(() => requestAnimationFrame(() => { bar.firstChild.style.width = Math.max(2, v / max * 100) + '%'; }));
+  });
+  return box;
+}
+const note = (msg, cls) => h('div', { class: 'note ' + (cls || '') }, msg);
+const unavail = (title, msg) => h('div', { class: 'panel empty' }, h('div', { class: 'big' }, '\u26CF'), h('p', { class: 'lbl2' }, title), h('p', { class: 'muted small' }, msg), tag('unavailable'));
+function makeTable({ cols, rows, filters, defaultSort, placeholder = 'Search…', pageSize = 40 }) {
+  rows.forEach(r => { r._s = ((r.name || '') + ' ' + (r.id || '') + ' ' + (r.catLabel || '')).toLowerCase(); });
+  const st = { q: '', sort: defaultSort || (cols.find(c => c.num) || cols[0]).key, dir: -1, limit: pageSize, f: filters ? filters[0].id : null };
+  const search = h('input', { type: 'search', class: 'inp', placeholder, 'aria-label': placeholder, style: { flex: '1 1 160px', width: 'auto', minHeight: '44px' } });
+  const info = h('div', { class: 'small muted', style: { margin: '6px 0' } });
+  const tbody = h('tbody'), more = h('button', { class: 'btn ghost small', type: 'button', style: { marginTop: '8px' } }, 'Show more');
+  const thead = h('tr');
+  const heads = cols.map(c => { const b = h('button', { type: 'button', onclick: () => { if (st.sort === c.key) st.dir *= -1; else { st.sort = c.key; st.dir = c.num ? -1 : 1; } st.limit = pageSize; draw(); } }, c.label); const th = h('th', { class: c.num ? 'num' : '', scope: 'col' }, b); thead.append(th); return { th, c }; });
+  const fbar = filters ? h('div', { class: 'chips', style: { marginBottom: '8px' } }) : null;
+  const draw = () => {
+    let r = rows;
+    if (filters && st.f) { const f = filters.find(x => x.id === st.f); if (f && f.fn) r = r.filter(f.fn); }
+    if (st.q) r = r.filter(x => x._s.includes(st.q));
+    r = r.slice().sort((a, b) => { const x = a[st.sort], y = b[st.sort]; const c = (typeof x === 'number' && typeof y === 'number') ? x - y : String(x).localeCompare(String(y)); return c * st.dir; });
+    const max = Math.max(1, ...r.map(x => +x.value || 0));
+    clear(tbody);
+    r.slice(0, st.limit).forEach(row => {
+      const tr = h('tr');
+      cols.forEach(c => {
+        const td = h('td', { class: c.num ? 'num' : '' });
+        if (c.render) add(td, [c.render(row, max)]); else td.append(String(row[c.key]));
+        tr.append(td);
+      });
+      tbody.append(tr);
+    });
+    if (!r.length) tbody.append(h('tr', {}, h('td', { colSpan: cols.length, class: 'muted' }, 'Nothing matches.')));
+    info.textContent = `Showing ${Math.min(st.limit, r.length)} of ${r.length}`;
+    more.hidden = r.length <= st.limit;
+    heads.forEach(({ th, c }) => th.setAttribute('aria-sort', st.sort === c.key ? (st.dir < 0 ? 'descending' : 'ascending') : 'none'));
+    if (fbar) $$('button', fbar).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.id === st.f)));
+  };
+  if (filters) filters.forEach(f => fbar.append(h('button', { class: 'chip', type: 'button', 'data-id': f.id, onclick: () => { st.f = f.id; st.limit = pageSize; draw(); } }, f.label)));
+  more.onclick = () => { st.limit += pageSize; draw(); };
+  let tm; search.addEventListener('input', () => { clearTimeout(tm); tm = setTimeout(() => { st.q = search.value.trim().toLowerCase(); st.limit = pageSize; draw(); }, 150); });
+  draw();
+  return h('div', { class: 'tblbox' }, h('div', { class: 'tblbar' }, search), fbar, info,
+    h('div', { class: 'tblscroll' }, h('table', {}, h('thead', {}, thead), tbody)), more);
+}
+const valCol = (kind) => ({ key: 'value', label: 'Count', num: true, render: (r, max) => h('span', {}, fmtKind(kind || r.kind || 'num', r.value), h('i', { class: 'mini', style: { width: Math.max(2, (+r.value || 0) / max * 100) + '%' } })) });
+const nameCol = { key: 'name', label: 'Name', render: r => h('span', {}, r.name, nsOf(r.id) !== 'minecraft' ? h('span', { class: 'nsmall' }, nsOf(r.id)) : null) };
+const rowsOf = (obj, extra) => Object.entries(obj || {}).map(([id, v]) => Object.assign({ id, name: pretty(id), value: +v || 0 }, extra));
+function subTabs(defs) {
+  const bar = h('div', { class: 'subtabs', role: 'tablist' }), body = h('div'), made = {};
+  const show = id => { $$('button', bar).forEach(b => b.setAttribute('aria-selected', String(b.dataset.id === id))); clear(body); if (!made[id]) made[id] = defs.find(d => d.id === id).render(); body.append(made[id]); };
+  defs.forEach(d => bar.append(h('button', { role: 'tab', 'data-id': d.id, 'aria-selected': 'false', onclick: () => show(d.id) }, d.label)));
+  show(defs[0].id);
+  return h('div', {}, bar, body);
+}
+async function copyText(t) { try { await navigator.clipboard.writeText(t); toast('Copied'); } catch (e) { toast('Copy failed. Select the text manually.', 'bad'); } }
+const copyBtn = t => h('button', { class: 'copy', type: 'button', onclick: () => copyText(t), 'aria-label': 'Copy ' + t }, 'Copy');
+
+/* ============ importing ============ */
+const fileIn = $('#fileIn'); let importTarget = null;
+function openImport(uuid) { importTarget = uuid || null; fileIn.value = ''; fileIn.click(); }
+function ensurePlayer(uuid) { return db.players[uuid] || (db.players[uuid] = { uuid, name: null, stats: null, adv: null, importedAt: Date.now() }); }
+function bumpRecords(uuid, stats) {
+  const t = cget(stats['minecraft:custom'] || null, 'time_since_death'); if (t == null) return;
+  const r = db.records[uuid] = db.records[uuid] || {}; if (!(r.longestLife >= t)) r.longestLife = t;
+}
+async function importFiles(files, assign) {
+  let n = 0, lvl = 0; const bad = [];
+  for (const f of files) {
+    try {
+      const buf = await f.arrayBuffer(), u8 = new Uint8Array(buf);
+      if (u8[0] === 0x1f && u8[1] === 0x8b) { db.level = await readLevelDat(buf); lvl++; continue; }
+      let json; try { json = JSON.parse(new TextDecoder().decode(buf)); } catch (e) { bad.push(`${f.name}: not valid JSON`); continue; }
+      const kind = detectKind(json); if (!kind) { bad.push(`${f.name}: not a stats or advancements file`); continue; }
+      const m = f.name.match(/[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}/i);
+      let uuid = m ? dash(m[0]) : null;
+      if (assign) { if (uuid && uuid !== assign && !confirm(`"${f.name}" has a different UUID than the player you searched. Import it for this player anyway?`)) { bad.push(`${f.name}: skipped (UUID mismatch)`); continue; } uuid = assign; }
+      if (!uuid) { bad.push(`${f.name}: filename has no UUID (use the original <uuid>.json name)`); continue; }
+      const p = ensurePlayer(uuid);
+      if (kind === 'adv') p.adv = json; else { p.stats = kind === 'legacy' ? { stats: legacyStats(json), DataVersion: null } : json; bumpRecords(uuid, p.stats.stats); }
+      p.importedAt = Date.now(); n++;
+    } catch (e) { bad.push(`${f.name}: ${e.message}`); }
+  }
+  persistDb();
+  toast(`Imported ${n} player file${n === 1 ? '' : 's'}${lvl ? ' + level.dat' : ''}.` + (bad.length ? ` ${bad.length} skipped.` : ''), bad.length && !n && !lvl ? 'bad' : undefined);
+  if (bad.length) console.warn('Import skipped:', bad);
+  if (bad.length) toast(bad[0], 'bad');
+  refreshAfterImport();
+}
+fileIn.addEventListener('change', () => { if (fileIn.files.length) importFiles(Array.from(fileIn.files), importTarget); });
+
+/* ============ player view ============ */
+const state = { ed: 'auto', profile: null, loadId: 0 };
+const recent = { get: k => LS.get('nds.recent.' + k, []), push(k, item) { const l = this.get(k).filter(x => x.q.toLowerCase() !== item.q.toLowerCase()); l.unshift(item); LS.set('nds.recent.' + k, l.slice(0, 8)); } };
+function renderRecent(kind) {
+  const box = $(kind === 'player' ? '#recentPlayers' : '#recentServers'); clear(box);
+  recent.get(kind).forEach(x => box.append(h('button', { class: 'chip', type: 'button', onclick: () => { if (kind === 'player') { $('#playerQ').value = x.q; setEd(x.ed); searchPlayer(x.q, x.ed); } else { $('#serverQ').value = x.q; setSrvEd(x.ed); checkServer(x.q, x.ed); } } }, x.q, h('span', { class: 'x' }, x.ed === 'bedrock' ? 'BE' : x.ed === 'java' ? 'JE' : ''))));
+}
+function setEd(ed) { state.ed = ed; $$('#edSeg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.ed === ed))); }
+let srvEd = 'java';
+function setSrvEd(ed) { srvEd = ed; $$('#srvSeg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.ed === ed))); }
+function setHash(obj) { try { history.replaceState(null, '', '#' + new URLSearchParams(obj).toString()); } catch (e) {} }
+
+function errorCard(e, retry) {
+  const hints = {
+    invalid: 'Check the spelling. Java names have no spaces; Bedrock gamertags can.',
+    notfound: 'Try the other edition, or check for typos. Accounts that were never created, or were renamed, will not be found.',
+    network: 'The lookup service may be down or blocked on this network. Try again, or change the API address in Settings.',
+    timeout: 'The service is slow right now. Try again in a moment.',
+    ratelimit: 'Too many requests. Give it a minute.',
+    config: 'Open Settings and reset the API addresses.'
+  };
+  const prov = e.providers && e.providers.length ? h('p', { class: 'small faint' }, 'Services tried: ' + e.providers.map(p => `${p.name} (${p.status})`).join(', ')) : null;
+  return h('div', { class: 'panel err' }, h('h3', {}, e.kind === 'notfound' ? 'Player not found' : e.kind === 'invalid' ? 'That name does not look right' : 'Lookup failed'), h('p', {}, e.message), h('p', { class: 'muted small' }, hints[e.kind] || ''), prov,
+    retry ? h('button', { class: 'btn ghost small', type: 'button', onclick: retry }, 'Try again') : null);
+}
+async function searchPlayer(q, ed, force) {
+  q = (q || '').trim(); const out = $('#playerOut'), id = ++state.loadId;
+  clear(out).append(h('div', { class: 'panel' }, h('p', {}, h('span', { class: 'spin' }), 'Looking up ' + q + '…'), h('div', { class: 'sk', style: { height: '120px', marginTop: '8px' } })));
+  try {
+    const res = await lookupPlayer(q, ed || state.ed, force); if (id !== state.loadId) return;
+    const p = Object.assign({}, res.data, { fromCache: res.cached, fetchedAt: res.t });
+    state.profile = p; recent.push('player', { q: p.name, ed: p.edition }); renderRecent('player');
+    setHash({ player: p.name, ed: p.edition });
+    const sources = await loadSources(p, force); if (id !== state.loadId) return;
+    renderPlayer(p, sources);
+  } catch (e) {
+    if (id !== state.loadId) return;
+    clear(out).append(errorCard(e instanceof ApiError ? e : new ApiError('network', e.message || 'Unexpected error'), () => searchPlayer(q, ed, true)));
+  }
+}
+async function fetchApi(tpl, p) {
+  const url = tpl.replace(/\{uuid_nodash\}/g, p.uuid.replace(/-/g, '')).replace(/\{uuid\}/g, p.uuid).replace(/\{name\}/g, enc(p.name)).replace(/\{xuid\}/g, p.xuid || '');
+  const r = await fetchRaw(url, 12000);
+  if (!r.ok || !r.data || typeof r.data !== 'object') throw new ApiError('http', `Custom API answered HTTP ${r.status}${r.data ? '' : ' without JSON'}.`);
+  return r.data;
+}
+async function loadSources(p, force) {
+  const S = { stats: null, adv: null, level: db.level ? { data: db.level, source: 'imported', t: db.level.importedAt } : null, notes: [] };
+  const imp = db.players[p.uuid];
+  if (imp && imp.stats) S.stats = { data: imp.stats, source: 'imported', t: imp.importedAt };
+  if (imp && imp.adv) S.adv = { data: imp.adv, source: 'imported', t: imp.importedAt };
+  if (/^https?:\/\//i.test(cfg.statsUrl || '')) {
+    try {
+      const r = await cached('cs.' + p.uuid + '.' + cfg.statsUrl, () => fetchApi(cfg.statsUrl, p), force);
+      const kind = detectKind(r.data);
+      if (kind === 'stats' || kind === 'legacy') S.stats = { data: kind === 'legacy' ? { stats: legacyStats(r.data) } : r.data, source: r.cached ? 'cached' : 'live', t: r.t };
+      if (r.data.advancements && typeof r.data.advancements === 'object') S.adv = { data: r.data.advancements, source: r.cached ? 'cached' : 'live', t: r.t };
+      else if (kind === 'adv') S.adv = { data: r.data, source: r.cached ? 'cached' : 'live', t: r.t };
+      if (!kind && !r.data.advancements) S.notes.push('Custom stats API answered, but not in the vanilla stats format.');
+    } catch (e) { S.notes.push('Custom stats API failed: ' + e.message + (location.protocol === 'https:' && /^http:/i.test(cfg.statsUrl) ? ' (This page is https, so http APIs are blocked.)' : '')); }
+  }
+  if (/^https?:\/\//i.test(cfg.advUrl || '')) {
+    try { const r = await cached('ca.' + p.uuid + '.' + cfg.advUrl, () => fetchApi(cfg.advUrl, p), force); if (detectKind(r.data) === 'adv') S.adv = { data: r.data, source: r.cached ? 'cached' : 'live', t: r.t }; else S.notes.push('Custom advancements API answered, but not in the advancements format.'); }
+    catch (e) { S.notes.push('Custom advancements API failed: ' + e.message); }
+  }
+  if (S.stats) { try { bumpRecords(p.uuid, S.stats.data.stats || {}); if (db.records[p.uuid]) persistDb(); } catch (e) {} }
+  if (p.edition === 'java' && db.players[p.uuid] && !db.players[p.uuid].name) { db.players[p.uuid].name = p.name; persistDb(); }
+  return S;
+}
+function renderPlayer(p, S) {
+  const out = clear($('#playerOut'));
+  const meta = h('div', { class: 'meta' },
+    h('h2', {}, p.name), h('div', { class: 'row', style: { margin: '6px 0' } }, h('span', { class: 'tag edition ' + p.edition }, p.edition === 'java' ? 'Java Edition' : 'Bedrock Edition'), p.fromCache ? tag('cached', 'cached ' + ago(p.fetchedAt)) : tag('live', 'live')),
+    (() => {
+      const kv = h('dl', { class: 'kv' });
+      const row = (k, v) => { if (v == null || v === '') return; kv.append(h('dt', {}, k), h('dd', {}, v)); };
+      row(p.edition === 'java' ? 'UUID' : 'Floodgate UUID', h('span', {}, h('span', { class: 'mono' }, p.uuid), copyBtn(p.uuid)));
+      if (p.xuid) row('XUID', h('span', {}, h('span', { class: 'mono' }, p.xuid), copyBtn(p.xuid)));
+      if (p.edition === 'bedrock') row('On Java servers as', h('span', { class: 'mono' }, '.' + p.name.replace(/ /g, '_')));
+      row('Skin model', p.skinUrl ? (p.slim ? 'Slim (Alex)' : 'Classic (Steve)') : null);
+      if (p.edition === 'java') row('Cape', p.capeUrl ? h('a', { href: p.capeUrl, target: '_blank', rel: 'noopener' }, 'View cape texture') : 'None found');
+      if (p.createdAt) row('Account created', fmtDate(p.createdAt));
+      if (p.skinUpdated) row('Skin updated', fmtDate(p.skinUpdated));
+      return kv;
+    })(),
+    p.nameHistory && p.nameHistory.length > 1 ? h('details', {}, h('summary', {}, `Name history (${p.nameHistory.length})`), h('ul', {}, p.nameHistory.map(x => h('li', {}, x.name, x.changedAt ? h('span', { class: 'faint small' }, ' — ' + fmtDate(x.changedAt)) : h('span', { class: 'faint small' }, ' — original')))))
+      : (p.edition === 'java' ? h('p', { class: 'small faint' }, 'Name history: unavailable (Mojang removed the public name-history endpoint).') : null),
+    h('div', { class: 'row', style: { marginTop: '10px' } },
+      h('button', { class: 'btn small', type: 'button', onclick: () => searchPlayer(p.name, p.edition, true) }, 'Refresh'),
+      h('button', { class: 'btn ghost small', type: 'button', onclick: () => copyText(location.href.split('#')[0] + '#' + new URLSearchParams({ player: p.name, ed: p.edition })) }, 'Copy link'),
+      p.skinUrl ? h('a', { class: 'btn ghost small', style: { display: 'inline-flex', alignItems: 'center', textDecoration: 'none' }, href: p.skinUrl, target: '_blank', rel: 'noopener' }, 'Skin PNG') : null,
+      p.edition === 'java' ? h('a', { class: 'btn ghost small', style: { display: 'inline-flex', alignItems: 'center', textDecoration: 'none' }, href: 'https://namemc.com/profile/' + enc(p.name), target: '_blank', rel: 'noopener' }, 'NameMC') : null));
+  out.append(h('div', { class: 'panel profile' }, h('div', { class: 'stage' }, skinDoll(p.skinUrl, p.slim, 6)), meta));
+  // data sources
+  const src = h('div', { class: 'panel' }, h('h3', {}, 'Where this data comes from'));
+  const line = (label, s, extra) => src.append(h('div', { class: 'row small', style: { margin: '4px 0' } }, h('b', {}, label), s ? tag(s.source, s.source + (s.t && s.source !== 'live' ? ' · ' + ago(s.t) : '')) : tag('unavailable'), extra ? h('span', { class: 'muted' }, extra) : null));
+  src.append(h('div', { class: 'row small', style: { margin: '4px 0' } }, h('b', {}, 'Profile & skin'), p.fromCache ? tag('cached', 'cached · ' + ago(p.fetchedAt)) : tag('live'), h('span', { class: 'muted' }, (p.providers || []).filter(x => x.status === 'live').map(x => x.name).join(', ') || '')));
+  (p.providers || []).filter(x => x.status !== 'live').forEach(x => src.append(h('div', { class: 'small faint' }, `${x.name}: ${x.status === 'notfound' ? 'no data' : 'unreachable'}${x.note ? ' (' + x.note + ')' : ''}`)));
+  line('Statistics', S.stats); line('Advancements', S.adv); line('World (level.dat)', S.level, S.level ? 'applies to that world, not necessarily this player' : null);
+  S.notes.forEach(n => src.append(note(n, 'warn')));
+  out.append(src);
+  if (!S.stats && !S.adv) { out.append(emptyStats(p)); return; }
+  const ctx = { p, S, stats: S.stats ? (S.stats.data.stats || {}) : null };
+  ctx.D = ctx.stats ? derive(ctx.stats) : null; ctx.adv = S.adv ? parseAdv(S.adv.data) : null;
+  const need = (what, fn) => () => (what === 'stats' && !ctx.stats) ? unavail('No statistics file for this player', 'Import world/stats/' + p.uuid + '.json to fill this tab.') : fn(ctx);
+  out.append(subTabs([
+    { id: 'ov', label: 'Overview', render: need('stats', tabOverview) }, { id: 'cb', label: 'Combat', render: need('stats', tabCombat) },
+    { id: 'bl', label: 'Blocks', render: need('stats', tabBlocks) }, { id: 'mv', label: 'Movement', render: need('stats', tabMovement) },
+    { id: 'ad', label: 'Advancements', render: () => tabAdv(ctx) }, { id: 'it', label: 'Items', render: need('stats', tabItems) },
+    { id: 'wd', label: 'World & survival', render: () => tabWorld(ctx) }, { id: 'all', label: 'All stats', render: need('stats', tabAll) }
+  ]));
+}
+function emptyStats(p) {
+  const java = p.edition === 'java';
+  return h('div', { class: 'panel empty' }, h('div', { class: 'big' }, '\uD83D\uDCE6'), h('p', { class: 'lbl2' }, 'No statistics loaded for ' + p.name),
+    java ? h('p', { class: 'muted small' }, 'Mojang does not publish player stats by username. They are stored in the world folder as ', h('span', { class: 'mono' }, p.uuid + '.json'), ' (inside world/stats and world/advancements). Import those files, or point Settings at a stats API on a server you run.')
+      : h('p', { class: 'muted small' }, 'Bedrock Edition has no per-player statistics file and no public stats API. Only a plugin or add-on on a server you control could provide them (Settings → custom stats URL).'),
+    h('div', { class: 'row', style: { justifyContent: 'center', marginTop: '8px' } },
+      h('button', { class: 'btn small', type: 'button', onclick: () => openImport(p.uuid) }, 'Import files for ' + p.name),
+      h('button', { class: 'btn ghost small', type: 'button', onclick: openSettings }, 'Settings')), tag('unavailable'));
+}
+function refreshAfterImport() { if (state.profile && !$('#view-player').hidden) searchPlayer(state.profile.name, state.profile.edition); if (!$('#view-boards').hidden) renderBoards(); }
+
+/* ============ dashboard tabs ============ */
+const srcTag = ctx => ctx.S.stats ? ctx.S.stats.source : null;
+function tabOverview(ctx) {
+  const D = ctx.D, s = srcTag(ctx), adv = ctx.adv ? advSummary(ctx.adv) : null;
+  const wrap = h('div');
+  wrap.append(h('div', { class: 'grid', style: { marginTop: '10px' } },
+    statTile('Play time', D.playTicks != null ? fmtTicks(D.playTicks) : null, { tag: s, hot: true }),
+    statTile('Days played', D.playTicks != null ? (D.playTicks / 24000).toFixed(1) : null, { tag: 'estimated', sub: 'play time ÷ 24,000 ticks' }),
+    statTile('Blocks mined', D.blocksMined != null ? fmtNum(D.blocksMined) : null, { tag: s }),
+    statTile('Mobs killed', D.mobKills != null ? fmtNum(D.mobKills) : null, { tag: s }),
+    statTile('Deaths', D.deaths != null ? fmtNum(D.deaths) : null, { tag: s, why: 'Vanilla leaves out stats that are still zero, so this may mean no deaths. It is not assumed.' }),
+    statTile('Distance travelled', D.distTotal != null ? fmtDist(D.distTotal) : null, { tag: s }),
+    statTile('Jumps', D.jumps != null ? fmtNum(D.jumps) : null, { tag: s }),
+    statTile('Advancements done', adv ? fmtNum(adv.done) : null, { tag: ctx.S.adv ? ctx.S.adv.source : null, why: 'No advancements file loaded.' })));
+  const hl = [];
+  if (D.mined && Object.keys(D.mined).length) { const [k, v] = Object.entries(D.mined).sort((a, b) => b[1] - a[1])[0]; hl.push(['Most-mined block', pretty(k), fmtNum(v)]); }
+  if (D.killed && Object.keys(D.killed).length) { const [k, v] = Object.entries(D.killed).sort((a, b) => b[1] - a[1])[0]; hl.push(['Most-killed mob', pretty(k), fmtNum(v)]); }
+  if (D.dist.length) { const [k, v] = D.dist.slice().sort((a, b) => b[1] - a[1])[0]; hl.push(['Favourite way to travel', pretty(k.replace(/_one_cm$/, '')), fmtDist(v)]); }
+  if (D.crafted && Object.keys(D.crafted).length) { const [k, v] = Object.entries(D.crafted).sort((a, b) => b[1] - a[1])[0]; hl.push(['Most-crafted item', pretty(k), fmtNum(v)]); }
+  if (hl.length) wrap.append(h('div', { class: 'panel' }, h('h3', {}, 'Highlights'), h('div', { class: 'grid wide', style: { marginTop: '8px' } }, hl.map(([l, n, v]) => statTile(l, n, { sub: v })))));
+  const ver = ctx.S.stats.data.DataVersion; if (ver) wrap.append(h('p', { class: 'small faint' }, 'Stats file data version ' + ver));
+  return wrap;
+}
+function tabCombat(ctx) {
+  const D = ctx.D, c = D.custom, s = srcTag(ctx), wrap = h('div');
+  const g = k => cget(c, k);
+  wrap.append(h('div', { class: 'grid', style: { marginTop: '10px' } },
+    statTile('Mobs killed', D.mobKills != null ? fmtNum(D.mobKills) : null, { tag: s }), statTile('Players killed', D.playerKills != null ? fmtNum(D.playerKills) : null, { tag: s }),
+    statTile('Deaths', D.deaths != null ? fmtNum(D.deaths) : null, { tag: s }),
+    statTile('K/D (player kills)', D.kdPlayers != null ? D.kdPlayers.toFixed(2) : null, { tag: 'estimated', sub: 'player kills ÷ deaths', why: 'Needs both player kills and deaths recorded.' }),
+    statTile('K/D (all kills)', D.kdAll != null ? D.kdAll.toFixed(2) : null, { tag: 'estimated', sub: 'mob + player kills ÷ deaths' }),
+    statTile('Damage dealt', fmtDmgOrNull(g('damage_dealt')), { tag: s }), statTile('Damage taken', fmtDmgOrNull(g('damage_taken')), { tag: s }),
+    statTile('Blocked by shield', fmtDmgOrNull(g('damage_blocked_by_shield')), { tag: s }), statTile('Absorbed', fmtDmgOrNull(g('damage_absorbed')), { tag: s }),
+    statTile('Resisted', fmtDmgOrNull(g('damage_resisted')), { tag: s })));
+  wrap.append(h('div', { class: 'panel' }, h('h3', {}, 'Kills by mob'), D.killed && Object.keys(D.killed).length ? makeTable({ cols: [nameCol, valCol()], rows: rowsOf(D.killed), placeholder: 'Search mobs…' }) : h('p', { class: 'muted' }, 'No per-mob kills recorded.')));
+  wrap.append(h('div', { class: 'panel' }, h('h3', {}, 'Killed by'), D.killedBy && Object.keys(D.killedBy).length ? makeTable({ cols: [nameCol, valCol()], rows: rowsOf(D.killedBy), placeholder: 'Search…' }) : h('p', { class: 'muted' }, 'No death causes recorded.')));
+  return wrap;
+}
+const fmtDmgOrNull = v => v == null ? null : fmtDmg(v);
+const HILITE = [['minecraft:stone', 'Stone'], ['minecraft:deepslate', 'Deepslate'], ['minecraft:dirt', 'Dirt'], ['minecraft:diamond_ore', 'Diamond ore'], ['minecraft:deepslate_diamond_ore', 'Deepslate diamond'], ['minecraft:iron_ore', 'Iron ore'], ['minecraft:deepslate_iron_ore', 'Deepslate iron']];
+function tabBlocks(ctx) {
+  const D = ctx.D, s = srcTag(ctx), m = D.mined, wrap = h('div');
+  if (!m || !Object.keys(m).length) return unavail('No mined-block stats', 'The stats file has no "minecraft:mined" section.');
+  const top1 = Object.entries(m).sort((a, b) => b[1] - a[1])[0];
+  wrap.append(h('div', { class: 'grid', style: { marginTop: '10px' } }, statTile('Total mined', fmtNum(D.blocksMined), { tag: s, hot: true }), statTile('Block types', fmtNum(Object.keys(m).length), { tag: s }), statTile('Most mined', pretty(top1[0]), { sub: fmtNum(top1[1]) + ' blocks' }),
+    statTile('Tools broken', D.broken ? fmtNum(sumObj(D.broken)) : null, { tag: s })));
+  wrap.append(h('div', { class: 'panel' }, h('h3', {}, 'Common blocks'), h('div', { class: 'grid', style: { marginTop: '8px' } }, HILITE.map(([id, l]) => statTile(l, m[id] != null ? fmtNum(m[id]) : null, { tag: m[id] != null ? s : null, why: 'Not in this stats file.' })))));
+  wrap.append(h('div', { class: 'panel' }, h('h3', {}, 'Top 10 mined'), barList(Object.entries(m).sort((a, b) => b[1] - a[1]).slice(0, 10), fmtNum)));
+  const isOre = r => /_ore$|ancient_debris|raw_.*_block/.test(r.id), isLog = r => /_log$|_wood$|_stem$|_planks$/.test(r.id), isStone = r => /stone|deepslate|granite|diorite|andesite|tuff|netherrack|basalt|blackstone|calcite/.test(r.id);
+  wrap.append(h('div', { class: 'panel' }, h('h3', {}, 'All blocks mined'), makeTable({ cols: [nameCol, valCol()], rows: rowsOf(m), placeholder: 'Search blocks…', filters: [{ id: 'all', label: 'All' }, { id: 'ore', label: 'Ores', fn: isOre }, { id: 'stone', label: 'Stone types', fn: isStone }, { id: 'wood', label: 'Wood', fn: isLog }] }),
+    h('p', { class: 'small faint' }, 'Block rankings across players are on the Boards tab (imported players only).')));
+  return wrap;
+}
+function tabMovement(ctx) {
+  const D = ctx.D, s = srcTag(ctx), wrap = h('div');
+  if (!D.dist.length) return unavail('No movement stats', 'No "_one_cm" distance stats in this file.');
+  const sorted = D.dist.slice().sort((a, b) => b[1] - a[1]), get = k => (D.dist.find(([x]) => x === 'minecraft:' + k + '_one_cm') || [])[1];
+  wrap.append(h('div', { class: 'grid', style: { marginTop: '10px' } }, statTile('Total distance', fmtDist(D.distTotal), { tag: s, hot: true }), statTile('Longest method', pretty(sorted[0][0].replace(/_one_cm$/, '')), { sub: fmtDist(sorted[0][1]) }), statTile('Jumps', D.jumps != null ? fmtNum(D.jumps) : null, { tag: s }), statTile('Methods used', String(D.dist.length))));
+  const cmp = []; const w = get('walk'), sp = get('sprint'), sw = get('swim'), fl = get('fly'), av = get('aviate'), cr = get('crouch');
+  if (w && sp) cmp.push(`Sprinting covered ${(sp / w * 100).toFixed(0)}% as far as walking.`);
+  if (w && sw) cmp.push(`Swimming covered ${(sw / w * 100).toFixed(0)}% as far as walking.`);
+  if (w && av) cmp.push(`Elytra flight covered ${(av / w * 100).toFixed(0)}% as far as walking.`);
+  if (w && cr) cmp.push(`Sneaking covered ${(cr / w * 100).toFixed(0)}% as far as walking.`);
+  if (fl) cmp.push(`Creative or spectator flight: ${fmtDist(fl)}.`);
+  if (cmp.length) wrap.append(h('div', { class: 'panel' }, h('h3', {}, 'Comparisons'), h('ul', {}, cmp.map(t => h('li', {}, t))), h('p', { class: 'small faint' }, 'Calculated from the recorded distances.'), tag('estimated')));
+  wrap.append(h('div', { class: 'panel' }, h('h3', {}, 'Distance by method'), barList(sorted.map(([k, v]) => [k, v]), fmtDist, { label: k => pretty(k.replace(/_one_cm$/, '')), color: 'aqua' }),
+    h('p', { class: 'small faint' }, `Share of total: ${sorted.slice(0, 3).map(([k, v]) => pretty(k.replace(/_one_cm$/, '')) + ' ' + (v / D.distTotal * 100).toFixed(0) + '%').join(', ')}.`)));
+  return wrap;
+}
+function tabAdv(ctx) {
+  if (!ctx.adv) return unavail('No advancements file', 'Import world/advancements/' + ctx.p.uuid + '.json to see completed advancements and dates.');
+  const A = advSummary(ctx.adv), total = +cfg.advTotal > 0 ? +cfg.advTotal : null, wrap = h('div'), s = ctx.S.adv.source;
+  const pct = total ? Math.min(100, A.done / total * 100) : (A.tracked ? A.done / A.tracked * 100 : null);
+  wrap.append(h('div', { class: 'grid', style: { marginTop: '10px' } }, statTile('Completed', fmtNum(A.done), { tag: s, hot: true }), statTile('In progress', fmtNum(A.tracked - A.done), { tag: s, sub: 'started, not finished' }),
+    statTile(total ? 'Complete' : 'Complete (of tracked)', pct != null ? pct.toFixed(1) + '%' : null, { tag: 'estimated', sub: total ? `of ${total} you set in Settings` : 'not a % of all advancements' }),
+    statTile('Remaining', total ? fmtNum(Math.max(0, total - A.done)) : null, { why: 'Set the total number of advancements for your game version in Settings to calculate this.', tag: total ? 'estimated' : null }),
+    statTile('Recipes unlocked', fmtNum(A.recipes), { tag: s, sub: 'not counted above' })));
+  const bar = h('div', { class: 'bar gold', style: { margin: '10px 0' } }, h('i')); requestAnimationFrame(() => requestAnimationFrame(() => { bar.firstChild.style.width = (pct || 0) + '%'; }));
+  wrap.append(h('div', { class: 'panel' }, bar, !total ? note('Minecraft only writes an advancement to the file once you start it, so the file cannot tell us the full list. Enter the total for your version in Settings to get a true completion percentage. Hidden advancements are included only if they appear in your file.', 'warn') : null,
+    h('h3', {}, 'By category'), barList(Object.entries(A.cats).map(([k, v]) => [k, v.done]), v => String(v), { label: k => pretty(k) + ` (${A.cats[k].done}/${A.cats[k].tracked} tracked)`, color: 'gold' })));
+  const rows = A.real.map(a => ({ id: a.id, name: pretty(a.id), catLabel: pretty(a.cat), cat: pretty(a.cat), status: a.done ? 'Done' : 'In progress', date: a.date || 0, value: a.done ? 1 : 0, crit: a.crit.length, raw: a }));
+  wrap.append(h('div', { class: 'panel' }, h('h3', {}, 'Advancement list'), makeTable({
+    cols: [nameCol, { key: 'cat', label: 'Category' }, { key: 'status', label: 'Status', render: r => tag(r.value ? 'live' : 'estimated', r.status) },
+      { key: 'date', label: 'Completed', num: true, render: r => r.date ? fmtDate(r.date) : (r.crit ? r.crit + ' criteria so far' : '—') }],
+    rows, defaultSort: 'date', placeholder: 'Search advancements…', filters: [{ id: 'all', label: 'All' }, { id: 'done', label: 'Done', fn: r => r.value === 1 }, { id: 'prog', label: 'In progress', fn: r => r.value === 0 }]
+  }), h('p', { class: 'small faint' }, 'Completion dates are recorded by Minecraft when the last criterion is met. Older worlds may lack them.')));
+  return wrap;
+}
+function tabItems(ctx) {
+  const D = ctx.D, s = srcTag(ctx), wrap = h('div');
+  const sets = [['crafted', 'Crafted', D.crafted], ['used', 'Used / consumed', D.used], ['pickedUp', 'Picked up', D.pickedUp], ['dropped', 'Dropped', D.dropped], ['broken', 'Broken (tools)', D.broken]];
+  wrap.append(h('div', { class: 'grid', style: { marginTop: '10px' } }, sets.map(([, l, o]) => statTile(l, o ? fmtNum(sumObj(o)) : null, { tag: o ? s : null }))));
+  wrap.append(note('Minecraft has no separate "consumed" statistic. Eating, drinking and throwing items all count under Used.'));
+  wrap.append(subTabs(sets.map(([id, l, o]) => ({ id, label: l, render: () => o && Object.keys(o).length ? h('div', { class: 'panel' }, makeTable({ cols: [nameCol, valCol()], rows: rowsOf(o), placeholder: 'Search items…' })) : unavail('Nothing recorded for ' + l.toLowerCase(), 'This category is missing from the stats file.') }))));
+  return wrap;
+}
+function tabWorld(ctx) {
+  const wrap = h('div'), D = ctx.D, L = ctx.S.level, s = srcTag(ctx), DIFF = ['Peaceful', 'Easy', 'Normal', 'Hard'], GM = ['Survival', 'Creative', 'Adventure', 'Spectator'];
+  wrap.append(h('div', { class: 'panel' }, h('h3', {}, 'How to read this tab'), h('div', { class: 'legend' }, tag('imported', 'Current world'), tag('local', 'Personal record'), tag('unavailable', 'Verified global record')),
+    h('p', { class: 'small muted' }, 'Current world = values from the files you loaded. Personal record = the best value this site has seen on this device. Global records are not shown: there is no trustworthy public source.')));
+  if (D) {
+    wrap.append(h('div', { class: 'panel' }, h('h3', {}, 'This player'), h('div', { class: 'grid', style: { marginTop: '8px' } },
+      statTile('Play time', D.playTicks != null ? fmtTicks(D.playTicks) : null, { tag: s, hot: true, sub: D.playTicks != null ? (D.playTicks / 72000).toFixed(1) + ' real-world hours' : null }),
+      statTile('Minecraft days played', D.playTicks != null ? (D.playTicks / 24000).toFixed(1) : null, { tag: 'estimated', sub: 'ticks ÷ 24,000 (one day = 20 real minutes)' }),
+      statTile('Days since last death', D.sinceDeath != null ? (D.sinceDeath / 24000).toFixed(1) : null, { tag: 'estimated', sub: D.sinceDeath != null ? fmtTicks(D.sinceDeath) + ' real time' : null }),
+      statTile('Time since last sleep', D.sinceRest != null ? fmtTicks(D.sinceRest) : null, { tag: s }),
+      statTile('Times slept in a bed', fmtMaybe(cget(D.custom, 'sleep_in_bed')), { tag: s }), statTile('Deaths', D.deaths != null ? fmtNum(D.deaths) : null, { tag: s }),
+      statTile('Time in worlds', D.worldTicks != null ? fmtTicks(D.worldTicks) : null, { tag: s }))));
+    const rec = db.records[ctx.p.uuid];
+    wrap.append(h('div', { class: 'panel' }, h('h3', {}, 'Personal records'), h('div', { class: 'grid', style: { marginTop: '8px' } },
+      statTile('Longest life seen', rec && rec.longestLife != null ? (rec.longestLife / 24000).toFixed(1) + ' days' : null, { tag: rec ? 'local' : null, sub: rec && rec.longestLife != null ? fmtTicks(rec.longestLife) : null, why: 'Vanilla does not track the longest life. It is only known from files imported on this device.' })),
+      h('p', { class: 'small faint' }, 'Vanilla only stores the current life. This record grows when you import newer snapshots of the same player.')));
+  }
+  const lv = h('div', { class: 'panel' }, h('h3', {}, 'World info'));
+  if (L) {
+    const d = L.data;
+    lv.append(h('div', { class: 'grid', style: { marginTop: '8px' } }, statTile('World', d.name, { tag: 'imported' }), statTile('World age', d.time != null ? (d.time / 24000).toFixed(1) + ' days' : null, { tag: 'imported', sub: d.time != null ? fmtTicks(d.time) + ' real time' : null }),
+      statTile('Current day', d.dayTime != null ? String(Math.floor(d.dayTime / 24000)) : null, { tag: 'imported' }), statTile('Hardcore', d.hardcore == null ? null : d.hardcore ? 'Yes' : 'No', { tag: 'imported', hot: !!d.hardcore }),
+      statTile('Difficulty', d.difficulty != null ? DIFF[d.difficulty] || String(d.difficulty) : null, { tag: 'imported' }), statTile('Game mode', d.gameType != null ? GM[d.gameType] || String(d.gameType) : null, { tag: 'imported' }),
+      statTile('Game version', d.version || null, { tag: 'imported' }), statTile('Last played', d.lastPlayed ? fmtDate(d.lastPlayed) : null, { tag: 'imported' })));
+    if (d.hardcore) lv.append(note('This is a hardcore world.' + (D && D.deaths ? ' This player has ' + D.deaths + ' recorded death(s) in their stats.' : ' No deaths are recorded for this player.')));
+    lv.append(h('p', { class: 'small faint' }, 'Imported ' + ago(d.importedAt) + '. level.dat describes the world, so it may not be this player\'s world.'));
+  } else lv.append(h('p', { class: 'muted small' }, 'World age, hardcore status and version need the world\'s level.dat file. Import it with your other files.'), h('button', { class: 'btn ghost small', type: 'button', onclick: () => openImport(ctx.p.uuid) }, 'Import files'), h('div', { style: { marginTop: '6px' } }, tag('unavailable')));
+  wrap.append(lv);
+  wrap.append(h('div', { class: 'panel' }, h('h3', {}, 'Verified global records'), h('p', { class: 'muted small' }, 'Not available. No trustworthy public source for survival or speedrun-style records exists in these APIs, so none are shown or invented.'), tag('unavailable')));
+  return wrap;
+}
+const fmtMaybe = v => v == null ? null : fmtNum(v);
+const CAT_LABELS = { custom: 'General', mined: 'Mined', crafted: 'Crafted', used: 'Used', broken: 'Broken', picked_up: 'Picked up', dropped: 'Dropped', killed: 'Killed', killed_by: 'Killed by' };
+function tabAll(ctx) {
+  const rows = [], counts = {};
+  for (const [cat, obj] of Object.entries(ctx.stats)) {
+    const c = stripNs(cat); if (!obj || typeof obj !== 'object') continue;
+    for (const [k, v] of Object.entries(obj)) { const kind = kindOf(c, k); rows.push({ id: k, name: pretty(k), catKey: c, catLabel: CAT_LABELS[c] || pretty(c), value: +v || 0, kind }); counts[c] = (counts[c] || 0) + 1; }
+  }
+  if (!rows.length) return unavail('Empty statistics file', 'The file contains no recorded statistics.');
+  const filters = [{ id: 'all', label: `All (${rows.length})` }].concat(Object.keys(counts).map(c => ({ id: c, label: `${CAT_LABELS[c] || pretty(c)} (${counts[c]})`, fn: r => r.catKey === c })));
+  return h('div', { class: 'panel' }, h('h3', {}, 'Every recorded statistic'), makeTable({
+    cols: [{ key: 'catLabel', label: 'Category' }, nameCol, { key: 'value', label: 'Value', num: true, render: r => fmtKind(r.kind, r.value) }], rows, filters, defaultSort: 'value', placeholder: 'Search all statistics…', pageSize: 60
+  }), h('p', { class: 'small faint' }, 'Distances are shown in metres or km, times in days/hours, damage in HP (stored value ÷ 10). Stats that Minecraft has not recorded are not listed.'));
+}
+
+/* ============ server checker ============ */
+const MC_COLORS = { 0: '#4a4a4a', 1: '#4d4dff', 2: '#00c800', 3: '#00bcbc', 4: '#d03030', 5: '#c040c0', 6: '#ffaa00', 7: '#aaaaaa', 8: '#6b6b6b', 9: '#6b6bff', a: '#55ff55', b: '#55ffff', c: '#ff5555', d: '#ff55ff', e: '#ffff55', f: '#ffffff' };
+function renderMotd(raw) {
+  const box = h('div', { class: 'motd', role: 'text' }); let st = {}, buf = '';
+  const flush = () => { if (!buf) return; const sp = h('span'); sp.textContent = buf; sp.style.color = st.color || '#aaaaaa'; if (st.b) sp.style.fontWeight = '800'; if (st.i) sp.style.fontStyle = 'italic'; if (st.u || st.s) sp.style.textDecoration = [st.u && 'underline', st.s && 'line-through'].filter(Boolean).join(' '); box.append(sp); buf = ''; };
+  for (let i = 0; i < raw.length; i++) {
+    const ch = raw[i];
+    if (ch === '\u00a7' && i + 1 < raw.length) {
+      flush(); const c = raw[++i].toLowerCase();
+      if (c === 'x') { const hex = raw.slice(i + 1, i + 13).replace(/\u00a7/g, ''); if (/^[0-9a-f]{6}$/i.test(hex)) { st = { color: '#' + hex }; i += 12; } }
+      else if (MC_COLORS[c]) st = { color: MC_COLORS[c] };
+      else if (c === 'l') st.b = 1; else if (c === 'o') st.i = 1; else if (c === 'n') st.u = 1; else if (c === 'm') st.s = 1; else if (c === 'r') st = {};
+      continue;
+    }
+    buf += ch;
+  }
+  flush(); return box;
+}
+function parseAddr(s) {
+  s = String(s || '').trim().replace(/^[a-z]+:\/\//i, '').replace(/\/.*$/, '');
+  let host = s, port = null; const m = s.match(/^(.*?):(\d{1,5})$/); if (m) { host = m[1]; port = +m[2]; }
+  if (!/^[A-Za-z0-9._-]{1,253}$/.test(host) || (port != null && (port < 1 || port > 65535))) throw new ApiError('invalid', 'That does not look like a server address. Use a host name or IP, optionally with :port.');
+  return { host, port, str: port ? `${host}:${port}` : host };
+}
+const normMcstatus = d => ({
+  online: !!d.online, host: d.host, port: d.port, ip: d.ip_address || null, eula: !!d.eula_blocked,
+  version: d.version ? (d.version.name_clean || d.version.name_raw || d.version.name || null) : null, protocol: d.version ? d.version.protocol : null, software: d.software || null,
+  players: d.players ? { online: d.players.online, max: d.players.max, list: Array.isArray(d.players.list) && d.players.list.length ? d.players.list.map(p => ({ name: p.name_clean || p.name_raw || p.name, uuid: p.uuid })) : null } : null,
+  motd: d.motd ? (d.motd.raw || d.motd.clean || null) : null, icon: d.icon || null, plugins: Array.isArray(d.plugins) ? d.plugins : null, mods: Array.isArray(d.mods) ? d.mods : null,
+  gamemode: d.gamemode || null, serverId: d.server_id || null, retrievedAt: d.retrieved_at || null
+});
+const normMcsrv = d => ({
+  online: !!d.online, host: d.hostname || d.ip, port: d.port, ip: d.ip || null, eula: !!d.eula_blocked,
+  version: d.version || null, protocol: d.protocol ? (d.protocol.version != null ? d.protocol.version : d.protocol) : null, software: d.software || null,
+  players: d.players ? { online: d.players.online, max: d.players.max, list: Array.isArray(d.players.list) && d.players.list.length ? d.players.list.map(p => ({ name: p.name, uuid: p.uuid })) : null } : null,
+  motd: d.motd ? (Array.isArray(d.motd.raw) ? d.motd.raw.join('\n') : d.motd.raw || null) : null, icon: d.icon || null,
+  plugins: Array.isArray(d.plugins) ? d.plugins : null, mods: Array.isArray(d.mods) ? d.mods : null, gamemode: d.gamemode || null, serverId: d.serverid || null, retrievedAt: null
+});
+async function queryServer(q, ed) {
+  const a = parseAddr(q), bedrock = ed === 'bedrock';
+  const tries = bedrock ? [['mcstatus.io', `${cfg.mcstatus}/bedrock/${enc(a.str)}`, normMcstatus], ['mcsrvstat.us', `${cfg.mcsrvstat}/bedrock/3/${enc(a.str)}`, normMcsrv]]
+    : [['mcstatus.io', `${cfg.mcstatus}/java/${enc(a.str)}`, normMcstatus], ['mcsrvstat.us', `${cfg.mcsrvstat}/3/${enc(a.str)}`, normMcsrv]];
+  const attempts = []; let last = null;
+  for (const [name, url, norm] of tries) {
+    try {
+      const r = await fetchRaw(url, 15000);
+      if (r.ok && r.data && typeof r.data === 'object' && r.data.online !== undefined) { const m = norm(r.data); m.provider = name; m.apiMs = r.ms; m.addr = a; m.attempts = attempts; return m; }
+      attempts.push(`${name}: HTTP ${r.status}`); last = new ApiError('http', `${name} could not check this address (HTTP ${r.status}).`);
+    } catch (e) { attempts.push(`${name}: ${e.message}`); last = e; }
+  }
+  last.attempts = attempts; throw last;
+}
+async function checkServer(q, ed) {
+  const out = $('#serverOut'); clear(out).append(h('div', { class: 'panel' }, h('p', {}, h('span', { class: 'spin' }), 'Contacting ' + q.trim() + '…'), h('div', { class: 'sk', style: { height: '90px' } })));
+  try {
+    const m = await queryServer(q, ed); recent.push('server', { q: q.trim(), ed }); renderRecent('server'); setHash({ server: q.trim(), ed });
+    renderServer(m, q.trim(), ed);
+  } catch (e) {
+    clear(out).append(h('div', { class: 'panel err' }, h('h3', {}, e.kind === 'invalid' ? 'Invalid address' : 'Could not check this server'), h('p', {}, e.message),
+      e.attempts && e.attempts.length ? h('p', { class: 'small faint' }, e.attempts.join(' · ')) : null,
+      h('p', { class: 'small muted' }, e.kind === 'invalid' ? 'Example: play.example.net or 203.0.113.5:25565.' : 'Check the address and edition, or try again. The status services may be blocked on this network.'),
+      e.kind === 'invalid' ? null : h('button', { class: 'btn ghost small', type: 'button', onclick: () => checkServer(q, ed) }, 'Try again')));
+  }
+}
+function renderServer(m, q, ed) {
+  const out = clear($('#serverOut')), P = m.players;
+  const icon = m.icon && /^data:image\/png;base64,[A-Za-z0-9+/=]+$/.test(m.icon) ? h('img', { class: 'srvicon', src: m.icon, alt: 'Server icon', width: 64, height: 64 }) : null;
+  out.append(h('div', { class: 'panel' }, h('div', { class: 'srvhead' }, icon, h('div', { class: 'grow', style: { minWidth: 0 } }, h('h2', { style: { overflowWrap: 'anywhere' } }, q),
+    h('div', { class: 'row', style: { marginTop: '6px' } }, h('span', { class: 'tag edition ' + ed }, ed === 'java' ? 'Java' : 'Bedrock'), m.online ? tag('live', 'online') : h('span', { class: 'tag', style: { color: 'var(--red)' } }, 'offline'), tag('live', 'via ' + m.provider))),
+    h('button', { class: 'btn small', type: 'button', onclick: () => checkServer(q, ed) }, 'Refresh')),
+    m.motd ? h('div', { style: { marginTop: '12px' } }, renderMotd(m.motd)) : null));
+  if (!m.online) {
+    out.append(h('div', { class: 'panel warn' }, h('h3', {}, 'Server is offline or unreachable'), h('p', { class: 'muted small' }, 'The status service could not connect. The server may be down, the port may be wrong, or it blocks status pings.' + (m.eula ? ' Mojang has blocked this server for an EULA violation.' : '')),
+      m.attempts && m.attempts.length ? h('p', { class: 'small faint' }, 'Backup service used after: ' + m.attempts.join(' · ')) : null));
+    return;
+  }
+  if (m.eula) out.append(note('Mojang reports an EULA block for this server address.', 'warn'));
+  const pct = P && P.max ? Math.min(100, P.online / P.max * 100) : 0, bar = h('div', { class: 'bar' }, h('i'));
+  requestAnimationFrame(() => requestAnimationFrame(() => { bar.firstChild.style.width = pct + '%'; }));
+  out.append(h('div', { class: 'panel' }, h('div', { class: 'grid' },
+    statTile('Players online', P && P.online != null ? `${fmtNum(P.online)} / ${fmtNum(P.max)}` : null, { tag: 'live', hot: true, why: 'The server did not report a player count.' }),
+    statTile('Version', m.version, { tag: m.version ? 'live' : null, why: 'Not exposed by the server.' }), statTile('Software', m.software, { tag: m.software ? 'live' : null, why: 'Not exposed. Many servers hide their software.' }),
+    statTile('Protocol', m.protocol != null ? String(m.protocol) : null, { tag: m.protocol != null ? 'live' : null }), ed === 'bedrock' ? statTile('Game mode', m.gamemode, { tag: m.gamemode ? 'live' : null }) : null,
+    statTile('Address', m.host ? `${m.host}${m.port ? ':' + m.port : ''}` : null, { sub: m.ip && m.ip !== m.host ? 'IP ' + m.ip : null }),
+    statTile('Ping to server', null, { why: 'These status APIs do not report a ping from your device. Only the API response time is known.' }),
+    statTile('Status API response', m.apiMs + ' ms', { tag: 'live', sub: 'time for the lookup service. Not your in-game ping' })),
+    P && P.max ? h('div', { style: { marginTop: '12px' } }, bar) : null,
+    m.retrievedAt ? h('p', { class: 'small faint' }, 'Status retrieved ' + ago(m.retrievedAt) + '. The service may cache results for up to a minute.') : null));
+  const pl = h('div', { class: 'panel' }, h('h3', {}, 'Public player list'));
+  if (P && P.list) {
+    pl.append(h('p', { class: 'small muted' }, `${P.list.length} name${P.list.length === 1 ? '' : 's'} exposed by the server (it may show only a sample).`),
+      h('div', { class: 'grid wide', style: { marginTop: '8px' } }, P.list.map(p => h('button', { class: 'slot', type: 'button', style: { flexDirection: 'row', alignItems: 'center', gap: '10px', cursor: ed === 'java' ? 'pointer' : 'default', textAlign: 'left', border: 0 }, onclick: () => { if (ed !== 'java') return; $('#playerQ').value = p.name; setEd('java'); showView('player'); searchPlayer(p.name, 'java'); } },
+        headImg(p.uuid && !/^0{8}-0{4}-0{4}-0{4}-0{12}$/.test(p.uuid) ? p.uuid : p.name, 28), h('span', { style: { overflowWrap: 'anywhere' } }, p.name)))));
+  } else pl.append(h('p', { class: 'muted small' }, P && P.online ? `${fmtNum(P.online)} player(s) online, but this server does not expose their names. Most servers keep the list private.` : 'No player list exposed.'), tag('unavailable'));
+  pl.append(h('p', { class: 'small faint' }, 'Player statistics are never available from a status check, even for online players.'));
+  out.append(pl);
+  const ex = h('div', { class: 'panel' }, h('h3', {}, 'Plugins and mods'));
+  const chips = (arr) => h('div', { class: 'chips', style: { margin: '6px 0' } }, arr.slice(0, 80).map(x => h('span', { class: 'chip', style: { cursor: 'default' } }, typeof x === 'string' ? x : (x.name || '?') + (x.version ? ' ' + x.version : ''))));
+  if (m.plugins && m.plugins.length) ex.append(h('p', { class: 'small muted' }, 'Plugins (' + m.plugins.length + ')'), chips(m.plugins));
+  if (m.mods && m.mods.length) ex.append(h('p', { class: 'small muted' }, 'Mods (' + m.mods.length + ')'), chips(m.mods));
+  if (!(m.plugins && m.plugins.length) && !(m.mods && m.mods.length)) ex.append(h('p', { class: 'muted small' }, 'Not exposed by this server.'), tag('unavailable'));
+  out.append(ex);
+}
+
+/* ============ boards + compare ============ */
+const METRICS = [
+  { id: 'blocks', label: 'Most blocks mined', get: D => D.blocksMined, fmt: fmtNum },
+  { id: 'mobs', label: 'Most mobs killed', get: D => D.mobKills, fmt: fmtNum },
+  { id: 'adv', label: 'Most advancements done', get: (D, A) => A ? A.done : null, fmt: fmtNum, advNote: true },
+  { id: 'life', label: 'Longest current survival', get: D => D.sinceDeath, fmt: fmtTicks, note: 'Time since each player\'s last death, as recorded in their stats file. Vanilla does not track a longest life.' },
+  { id: 'play', label: 'Highest play time', get: D => D.playTicks, fmt: fmtTicks },
+  { id: 'dist', label: 'Furthest travelled', get: D => D.distTotal, fmt: fmtDist },
+  { id: 'jumps', label: 'Most jumps', get: D => D.jumps, fmt: fmtNum },
+  { id: 'deaths', label: 'Most deaths', get: D => D.deaths, fmt: fmtNum }
+];
+const boardState = { metric: 'blocks', block: 'minecraft:stone', a: '', b: '' };
+const playerName = u => (db.players[u] && db.players[u].name) || u.slice(0, 8) + '…';
+function boardData() {
+  return Object.keys(db.players).map(uuid => {
+    const p = db.players[uuid]; let D = null, A = null;
+    try { D = p.stats ? derive(p.stats.stats || {}) : null; A = p.adv ? advSummary(parseAdv(p.adv)) : null; } catch (e) {}
+    return { uuid, name: playerName(uuid), D, A };
+  });
+}
+function renderBoards() {
+  const out = clear($('#boardsOut')), data = boardData(), n = data.length;
+  out.append(h('div', { class: 'panel' }, h('h2', {}, 'Leaderboards'), h('p', { class: 'muted small' }, 'Ranks only the players you imported on this device. These are not worldwide rankings, and no global records are shown.'),
+    h('div', { class: 'row', style: { marginTop: '8px' } }, tag('imported', n + ' player' + (n === 1 ? '' : 's') + ' imported'), db.level ? tag('imported', 'world: ' + db.level.name) : null),
+    h('div', { class: 'row', style: { marginTop: '10px' } },
+      h('button', { class: 'btn small', type: 'button', onclick: () => openImport(null) }, 'Import files'),
+      n ? h('button', { class: 'btn ghost small', type: 'button', onclick: resolveNames }, 'Look up Java names') : null,
+      n ? h('button', { class: 'btn ghost small', type: 'button', onclick: () => { if (confirm('Delete all imported players and level.dat from this device?')) { db = { players: {}, level: null, records: {} }; persistDb(); renderBoards(); } } }, 'Delete imported data') : null),
+    h('p', { class: 'small faint', style: { marginTop: '8px' } }, 'Tip: select every file inside world/stats (and world/advancements) at once. Keep the original <uuid>.json file names.')));
+  if (!n) { out.append(unavail('No players imported yet', 'Import stats files to build boards. Nothing is shown until real data exists.')); return; }
+  const mets = METRICS.slice(); const blocks = new Set(); data.forEach(d => d.D && d.D.mined && Object.keys(d.D.mined).forEach(k => blocks.add(k)));
+  const chipBox = h('div', { class: 'chips' }), body = h('div');
+  const sel = h('select', { class: 'inp', 'aria-label': 'Block', style: { marginTop: '8px', minHeight: '44px' }, onchange: e => { boardState.block = e.target.value; draw(); } }, Array.from(blocks).sort().map(k => h('option', { value: k, selected: k === boardState.block }, pretty(k))));
+  if (blocks.size && !blocks.has(boardState.block)) boardState.block = Array.from(blocks).sort()[0];
+  const allM = mets.concat(blocks.size ? [{ id: 'block', label: 'Most of one block mined', get: D => D.mined ? (D.mined[boardState.block] != null ? D.mined[boardState.block] : null) : null, fmt: fmtNum }] : []);
+  allM.forEach(m => chipBox.append(h('button', { class: 'chip', type: 'button', 'data-id': m.id, onclick: () => { boardState.metric = m.id; draw(); } }, m.label)));
+  function draw() {
+    const m = allM.find(x => x.id === boardState.metric) || allM[0]; clear(body);
+    $$('button', chipBox).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.id === m.id)));
+    const ranked = data.map(d => ({ d, v: d.D || d.A ? m.get(d.D || {}, d.A) : null })).filter(x => x.v != null && !isNaN(x.v)).sort((a, b) => b.v - a.v);
+    const missing = n - ranked.length, top = ranked.slice(0, 15), max = Math.max(1, ...(top.length ? [top[0].v] : [1]));
+    const box = h('div', { class: 'panel' }, h('h3', {}, m.label), h('p', { class: 'small muted' }, `Scope: ${n} imported player${n === 1 ? '' : 's'} on this device.` + (m.note ? ' ' + m.note : '')));
+    if (m.id === 'block') box.append(sel);
+    if (m.id === 'adv') box.append(h('p', { class: 'small faint' }, 'Counts finished advancements in each file (recipes and tab roots excluded).'));
+    if (!top.length) box.append(h('p', { class: 'muted' }, 'No imported player has this stat recorded.'));
+    top.forEach((x, i) => { const bar = h('div', { class: 'bar gold' }, h('i')); box.append(h('div', { class: 'rank' }, h('span', { class: 'pos' }, i + 1), headImg(x.d.uuid, 24), h('span', { style: { overflowWrap: 'anywhere' } }, x.d.name, h('button', { class: 'copy', type: 'button', 'aria-label': 'Rename ' + x.d.name, onclick: () => { const nn = prompt('Name for this player', db.players[x.d.uuid].name || ''); if (nn != null) { db.players[x.d.uuid].name = nn.trim().slice(0, 40) || null; persistDb(); renderBoards(); } } }, 'Rename')), h('b', {}, m.fmt(x.v)), bar)); requestAnimationFrame(() => requestAnimationFrame(() => { bar.firstChild.style.width = Math.max(2, x.v / max * 100) + '%'; })); });
+    if (missing) box.append(h('p', { class: 'small faint' }, `${missing} player${missing === 1 ? ' has' : 's have'} no recorded value and ${missing === 1 ? 'is' : 'are'} not ranked.`));
+    body.append(box);
+  }
+  out.append(h('div', { class: 'panel' }, h('h3', {}, 'Choose a board'), chipBox), body); draw();
+  // compare
+  const cmpBox = h('div', { class: 'panel' }, h('h2', {}, 'Compare two players'));
+  if (n < 2) { cmpBox.append(h('p', { class: 'muted small' }, 'Import at least two players to compare them.')); out.append(cmpBox); return; }
+  if (!db.players[boardState.a]) boardState.a = data[0].uuid; if (!db.players[boardState.b] || boardState.b === boardState.a) boardState.b = (data.find(d => d.uuid !== boardState.a) || data[1]).uuid;
+  const mkSel = key => h('select', { class: 'inp', 'aria-label': 'Player ' + key, style: { minHeight: '44px' }, onchange: e => { boardState[key] = e.target.value; drawCmp(); } }, data.map(d => h('option', { value: d.uuid, selected: d.uuid === boardState[key] }, d.name)));
+  const cmpOut = h('div'); cmpBox.append(h('div', { class: 'row', style: { margin: '8px 0' } }, mkSel('a'), mkSel('b')), cmpOut); out.append(cmpBox);
+  function drawCmp() {
+    clear(cmpOut); const A = data.find(d => d.uuid === boardState.a), B = data.find(d => d.uuid === boardState.b), rows = [];
+    mets.forEach(m => { const va = A.D || A.A ? m.get(A.D || {}, A.A) : null, vb = B.D || B.A ? m.get(B.D || {}, B.A) : null; rows.push({ name: m.label.replace(/^(Most|Highest|Longest|Furthest) /, ''), a: va, b: vb, fmt: m.fmt, win: m.id === 'deaths' ? 0 : 1 }); });
+    const cell = (v, o, fmt, win) => h('td', { class: 'num', style: win && v != null && o != null && v > o ? { color: 'var(--xp)', fontWeight: '800' } : {} }, v == null ? '—' : fmt(v));
+    cmpOut.append(h('div', { class: 'tblscroll' }, h('table', {}, h('thead', {}, h('tr', {}, h('th', {}, 'Stat'), h('th', { class: 'num' }, A.name), h('th', { class: 'num' }, B.name))),
+      h('tbody', {}, rows.map(r => h('tr', {}, h('td', {}, r.name), cell(r.a, r.b, r.fmt, r.win), cell(r.b, r.a, r.fmt, r.win)))))), h('p', { class: 'small faint' }, 'A dash means the value is not recorded in that player\'s files. Higher values are highlighted (deaths are not).'));
+  }
+  drawCmp();
+}
+async function resolveNames() {
+  const todo = Object.values(db.players).filter(p => !p.name && !/^0000/.test(p.uuid)).slice(0, 40);
+  if (!todo.length) { toast('Every player already has a name.'); return; }
+  toast('Looking up ' + todo.length + ' name(s)…'); let ok = 0;
+  for (const p of todo) {
+    try { const r = await fetchRaw(cfg.playerdb + enc(p.uuid)); const pl = r.data && r.data.data && r.data.data.player; if (r.ok && pl && pl.username) { p.name = pl.username; ok++; } } catch (e) { if (e.kind === 'ratelimit') break; }
+    await new Promise(r => setTimeout(r, 300));
+  }
+  persistDb(); toast(`Found ${ok} of ${todo.length} names. Offline-mode UUIDs cannot be resolved.`); renderBoards();
+}
+
+/* ============ settings ============ */
+const dlg = $('#dlgSettings');
+function fillSettings() { $$('[data-cfg]', dlg).forEach(i => { i.value = cfg[i.dataset.cfg] == null ? '' : cfg[i.dataset.cfg]; }); }
+function openSettings() { fillSettings(); if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', ''); }
+$('#btnSettings').onclick = openSettings; $('#setClose').onclick = () => dlg.close();
+$('#setForm').addEventListener('submit', e => {
+  e.preventDefault(); const next = Object.assign({}, cfg);
+  for (const i of $$('[data-cfg]', dlg)) {
+    const k = i.dataset.cfg; let v = i.value.trim();
+    if (['statsUrl', 'advUrl'].includes(k)) { if (v && !/^https?:\/\//i.test(v)) { toast('Custom URLs must start with http:// or https://', 'bad'); return; } }
+    else if (k === 'cacheMinutes' || k === 'advTotal') { v = v === '' ? (k === 'advTotal' ? '' : 10) : Math.max(0, Math.floor(+v) || 0); }
+    else { if (!/^https?:\/\//i.test(v)) { toast('API addresses must start with https://', 'bad'); return; } v = ['playerdb', 'ashcon', 'textures'].includes(k) ? v.replace(/\/*$/, '/') : v.replace(/\/+$/, ''); }
+    next[k] = v;
+  }
+  cfg = next; LS.set('nds.cfg', cfg); dlg.close(); toast('Settings saved');
+});
+$('#setReset').onclick = () => { cfg = Object.assign({}, DEFAULT_CFG); LS.del('nds.cfg'); fillSettings(); toast('Defaults restored'); };
+$('#setClearCache').onclick = () => { try { for (let i = localStorage.length - 1; i >= 0; i--) { const k = localStorage.key(i); if (k && k.startsWith('nds.c.')) localStorage.removeItem(k); } } catch (e) {} toast('Cached lookups cleared'); };
+$('#setClearData').onclick = () => { if (confirm('Delete all imported players and level.dat from this device?')) { db = { players: {}, level: null, records: {} }; persistDb(); toast('Imported data deleted'); } };
+
+/* ============ navigation + boot ============ */
+function showView(v) {
+  $$('.view').forEach(s => { s.hidden = s.id !== 'view-' + v; });
+  $$('.nav button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.view === v)));
+  if (v === 'boards') renderBoards();
+  window.scrollTo({ top: 0 });
+}
+$$('.nav button').forEach(b => b.addEventListener('click', () => showView(b.dataset.view)));
+$('#playerForm').addEventListener('submit', e => { e.preventDefault(); searchPlayer($('#playerQ').value, state.ed); });
+$('#serverForm').addEventListener('submit', e => { e.preventDefault(); checkServer($('#serverQ').value, srvEd); });
+$$('#edSeg button').forEach(b => b.addEventListener('click', () => setEd(b.dataset.ed)));
+$$('#srvSeg button').forEach(b => b.addEventListener('click', () => setSrvEd(b.dataset.ed)));
+$('#btnImportTop').addEventListener('click', () => openImport(null));
+window.addEventListener('unhandledrejection', e => { console.error(e.reason); toast('Something went wrong. Try again.', 'bad'); });
+function boot() {
+  pruneCache(); renderRecent('player'); renderRecent('server');
+  const q = new URLSearchParams(location.hash.slice(1)), ed = q.get('ed');
+  if (q.get('player')) { $('#playerQ').value = q.get('player'); setEd(['java', 'bedrock'].includes(ed) ? ed : 'auto'); searchPlayer(q.get('player'), state.ed); }
+  else if (q.get('server')) { $('#serverQ').value = q.get('server'); setSrvEd(ed === 'bedrock' ? 'bedrock' : 'java'); showView('server'); checkServer(q.get('server'), srvEd); }
+  else if (['boards', 'guide', 'server'].includes(q.get('view'))) showView(q.get('view'));
+}
+boot();
+})();
+
+</script>
+</body>
+</html>
